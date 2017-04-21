@@ -113,7 +113,12 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "name": "name"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
