@@ -7,17 +7,6 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          27.821792,
-          43.259333
-        ]
-      }
-    },
-    {
-      "type": "Feature",
-      "properties": {},
-      "geometry": {
-        "type": "Point",
-        "coordinates": [
           24.488525390625,
           42.20817645934742
         ]
@@ -129,7 +118,14 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "type": "",
+        "direction": "",
+        "speed": ""
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
