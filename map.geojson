@@ -762,7 +762,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "default_marker"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
