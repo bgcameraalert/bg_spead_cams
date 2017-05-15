@@ -366,7 +366,12 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "marker-color": "#7e7e7e",
+        "marker-size": "medium",
+        "marker-symbol": "",
+        "test": "test1"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
