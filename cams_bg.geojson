@@ -1,0 +1,1153 @@
+﻿{
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 140km/c@140\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.63342,
+          42.19813
+        ],
+        "type": "Point"
+      },
+      "id": "03de2902fb86c54021e3410cb41f36cc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 80km/c@80\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.442,
+          42.48576
+        ],
+        "type": "Point"
+      },
+      "id": "0639e1c0c8cf009751a73eaa44a9fe76"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.99514,
+          42.67118
+        ],
+        "type": "Point"
+      },
+      "id": "076fd625080f6da876547b7ac3e7cf4a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.09672,
+          41.94723
+        ],
+        "type": "Point"
+      },
+      "id": "0b532b979c5c55769b57b0b0fa171b9d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.53783,
+          42.12597
+        ],
+        "type": "Point"
+      },
+      "id": "15ef7cfc825cbe979cac008126914641"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 80km/c@80"
+      },
+      "geometry": {
+        "coordinates": [
+          27.55772,
+          42.43329
+        ],
+        "type": "Point"
+      },
+      "id": "1710b644dbc6e2fc6bbf8775088e3719"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.64907,
+          42.38507
+        ],
+        "type": "Point"
+      },
+      "id": "1801314e34e4d55c573a81224aed2729"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.48362,
+          43.08936
+        ],
+        "type": "Point"
+      },
+      "id": "1f76ea919921575e4f58cee914648842"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.88342,
+          43.1581
+        ],
+        "type": "Point"
+      },
+      "id": "1fa5b6afa501c3845a1b971e6413c62a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.82115,
+          42.06067
+        ],
+        "type": "Point"
+      },
+      "id": "1ff30b642a7215710572b090a77352e7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c"
+      },
+      "geometry": {
+        "coordinates": [
+          25.81414,
+          43.13445
+        ],
+        "type": "Point"
+      },
+      "id": "2566aab2ed7276fe9bc51fbef41fa3d1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za sredna skorost 80km/c@80"
+      },
+      "geometry": {
+        "coordinates": [
+          23.13015,
+          42.62578
+        ],
+        "type": "Point"
+      },
+      "id": "30142ed796bb9977e6eb825b18d2891f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.32879,
+          42.70475
+        ],
+        "type": "Point"
+      },
+      "id": "35f7d88f9a7c15ebe79a07df09efe405"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.98976,
+          43.43937
+        ],
+        "type": "Point"
+      },
+      "id": "36323d22f6517d8f83258f79e6fea8e9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.82492,
+          43.42231
+        ],
+        "type": "Point"
+      },
+      "id": "39200e6409489f7fb9571f4cef50f648"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.59484,
+          43.43877
+        ],
+        "type": "Point"
+      },
+      "id": "39a1c9f2cc6078a3b1484f16cad5011d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.42721,
+          42.55594
+        ],
+        "type": "Point"
+      },
+      "id": "3aec1827dd1bc93edb0a4b3bc21ef5c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.64547,
+          43.07095
+        ],
+        "type": "Point"
+      },
+      "id": "3c73879620ea6b292c3da38a7858d274"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.30467,
+          42.88478
+        ],
+        "type": "Point"
+      },
+      "id": "43205fa1415102e2ff033e1510dbfab5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 80km/c@80\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.35072,
+          42.62586
+        ],
+        "type": "Point"
+      },
+      "id": "441ef5f4151a26781211e0869a610eba"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.61398,
+          43.14731
+        ],
+        "type": "Point"
+      },
+      "id": "482d34b0ab97657b16f40bfc36bba201"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.69762,
+          42.67524
+        ],
+        "type": "Point"
+      },
+      "id": "49488da6c37ed9a12f9563d79df687da"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.89574,
+          43.22238
+        ],
+        "type": "Point"
+      },
+      "id": "497847c0f5f40fd9e57d03b75a1abbfe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.11953,
+          42.2905
+        ],
+        "type": "Point"
+      },
+      "id": "4b1e8cc0d809a19bffb3eb60c84961af"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.32661,
+          42.7145
+        ],
+        "type": "Point"
+      },
+      "id": "4d6143a8142454274caae0f89952260c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 70km/c@70\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          28.05762,
+          43.39707
+        ],
+        "type": "Point"
+      },
+      "id": "585e3e4daa97b6d6654076150fb2f4f5"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 80km/c@80\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.28989,
+          42.65089
+        ],
+        "type": "Point"
+      },
+      "id": "589fad37e9077b83817b5ec18b0baaca"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.89051,
+          43.20651
+        ],
+        "type": "Point"
+      },
+      "id": "591e1fef02985330407d139c25233ada"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.2012,
+          42.72267
+        ],
+        "type": "Point"
+      },
+      "id": "5a191a3ad24fc708507cad492b0f573b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.60891,
+          43.17427
+        ],
+        "type": "Point"
+      },
+      "id": "5c29fc305c3e5c88eef1320a77c858f3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.6354,
+          42.63304
+        ],
+        "type": "Point"
+      },
+      "id": "5c786e353d40939cfb7acd85a91f459b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.20507,
+          43.41414
+        ],
+        "type": "Point"
+      },
+      "id": "5fccd98feee42655329a10091c002481"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.92342,
+          43.31518
+        ],
+        "type": "Point"
+      },
+      "id": "6159dbcbeed157ec27ba0324dea1a0f4"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.52057,
+          42.47982
+        ],
+        "type": "Point"
+      },
+      "id": "62e6dd5fce4c16aaab9fa94a8a26babe"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.52932,
+          43.04033
+        ],
+        "type": "Point"
+      },
+      "id": "630aa684beb8cb063efa10bf34efda2e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.77744,
+          41.57118
+        ],
+        "type": "Point"
+      },
+      "id": "69f160b67338f3fc1454d45daba16b64"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.58583,
+          42.44376
+        ],
+        "type": "Point"
+      },
+      "id": "6b16d2d4d25df3cb5b746fd33cc18df9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.70598,
+          42.15433
+        ],
+        "type": "Point"
+      },
+      "id": "6f791a423ce50f367e4d50fa3fea1ac1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.34384,
+          42.67914
+        ],
+        "type": "Point"
+      },
+      "id": "73317738ab728a19ff1caa1b1a13562b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.23941,
+          42.9064
+        ],
+        "type": "Point"
+      },
+      "id": "76da04f34238fd845de6a323f1836000"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.24039,
+          43.39551
+        ],
+        "type": "Point"
+      },
+      "id": "7b62de100e3c3cb94c1f043c673465cc"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.87407,
+          42.47558
+        ],
+        "type": "Point"
+      },
+      "id": "7b896fe266b886711695c7fd470e1958"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.81781,
+          42.06408
+        ],
+        "type": "Point"
+      },
+      "id": "80cd7f00f634cb415a30a4099a3d8bf7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 40km/@40\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.19645,
+          42.35237
+        ],
+        "type": "Point"
+      },
+      "id": "82458d2c806a1134b15882883ca4512c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.65708,
+          42.3565
+        ],
+        "type": "Point"
+      },
+      "id": "8748d1738c080a0fa8573016e514e780"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 140km/c@140\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.85216,
+          42.43154
+        ],
+        "type": "Point"
+      },
+      "id": "89ae971edee0078bb4e38630e177735c"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.03837,
+          42.11711
+        ],
+        "type": "Point"
+      },
+      "id": "8d56e55330b09a1e312ffa4d76e14c5b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.87562,
+          43.16013
+        ],
+        "type": "Point"
+      },
+      "id": "9e590690d704ec0d17b6d5ae50f3ac88"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.88745,
+          43.04751
+        ],
+        "type": "Point"
+      },
+      "id": "a1c14a8479f109fb8c42a0d3d26d5441"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 140km/c@140\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.63774,
+          42.1984
+        ],
+        "type": "Point"
+      },
+      "id": "a90f409f606d114cecedb6b5f54a818a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 40km/c@40\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          28.13653,
+          43.40145
+        ],
+        "type": "Point"
+      },
+      "id": "abca9dc62e90ef5b7956344fc52004d7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.70134,
+          42.69431
+        ],
+        "type": "Point"
+      },
+      "id": "addfc0a1cc557c48b95aafd520ed9b65"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.07572,
+          42.69461
+        ],
+        "type": "Point"
+      },
+      "id": "ae92589b08942c2985b62cd2f654a93a"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90"
+      },
+      "geometry": {
+        "coordinates": [
+          27.70134,
+          42.69431
+        ],
+        "type": "Point"
+      },
+      "id": "b19177092a43ae436e3013cebdfc85c7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.63702,
+          43.33762
+        ],
+        "type": "Point"
+      },
+      "id": "b38da6b0f2f0047279499a64db922e8e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.97589,
+          43.8413
+        ],
+        "type": "Point"
+      },
+      "id": "b5713891bc525a888006c9db7500e462"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.42428,
+          42.46976
+        ],
+        "type": "Point"
+      },
+      "id": "b5ce8ff35947f397f69ef23f5164db11"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 140km/c@140\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.80366,
+          42.87913
+        ],
+        "type": "Point"
+      },
+      "id": "b65f477f8b229f4b98053bd64dafe718"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60"
+      },
+      "geometry": {
+        "coordinates": [
+          27.67693,
+          42.69114
+        ],
+        "type": "Point"
+      },
+      "id": "bef2e13dfee0dafd5af0294472c84470"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.07758,
+          42.5305
+        ],
+        "type": "Point"
+      },
+      "id": "c30c37d365beafd0c0885df65071e7be"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.39763,
+          42.70527
+        ],
+        "type": "Point"
+      },
+      "id": "c32417a7e9f47b378314421b19d44832"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za sredna skorost 80km/c@80\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.12605,
+          42.62894
+        ],
+        "type": "Point"
+      },
+      "id": "cf85ab10ac714f511d764123a734ffb1"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.9044,
+          43.2255
+        ],
+        "type": "Point"
+      },
+      "id": "cffba1f6a95f097a886886810d4fbb86"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 80km/c@80\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.33769,
+          42.63123
+        ],
+        "type": "Point"
+      },
+      "id": "d239689f26c72b050a91e0a42032e896"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 80km/c@80\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.44633,
+          42.48959
+        ],
+        "type": "Point"
+      },
+      "id": "d38ca26d82186faf9b6c9869352919e7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.51585,
+          42.47864
+        ],
+        "type": "Point"
+      },
+      "id": "d59080339eed6ab73199f93d5b2b2f50"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.68206,
+          43.07524
+        ],
+        "type": "Point"
+      },
+      "id": "d8db05d65de08166d441039adae6c37e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          28.16557,
+          43.41788
+        ],
+        "type": "Point"
+      },
+      "id": "d9d831efd51a5b8f9cf9e4575e6a5804"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.99333,
+          42.49778
+        ],
+        "type": "Point"
+      },
+      "id": "db4d1960f5c7bbb3b4de3a6826357301"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.55743,
+          42.45865
+        ],
+        "type": "Point"
+      },
+      "id": "dd05008c4f44d3798359b10279e5028f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          23.34003,
+          42.68886
+        ],
+        "type": "Point"
+      },
+      "id": "dd88310ea99e9b0822269cc48239a398"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 120km/c@120"
+      },
+      "geometry": {
+        "coordinates": [
+          24.27713,
+          42.27829
+        ],
+        "type": "Point"
+      },
+      "id": "e5f93131670b712504164dabb71ca375"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.79488,
+          42.99103
+        ],
+        "type": "Point"
+      },
+      "id": "ecb8cb05c0776f24207652e0373414e9"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          27.89576,
+          43.20012
+        ],
+        "type": "Point"
+      },
+      "id": "eef5475366c91f2611f971eb4cbac4e0"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50"
+      },
+      "geometry": {
+        "coordinates": [
+          27.95603,
+          43.21619
+        ],
+        "type": "Point"
+      },
+      "id": "efa80f7978d36fe5e8aec79210d96a31"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.19253,
+          42.93025
+        ],
+        "type": "Point"
+      },
+      "id": "f009935deec15e13e40f1132de41f00b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.00343,
+          42.64684
+        ],
+        "type": "Point"
+      },
+      "id": "f2d8e30df38788d3b877c16028246640"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.55772,
+          43.2545
+        ],
+        "type": "Point"
+      },
+      "id": "f48eb3064c4422cc1a8a6daf2ae87ba3"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 90km/c@90\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.87294,
+          43.64119
+        ],
+        "type": "Point"
+      },
+      "id": "f66925651d52c2f0fdc91251d393fb02"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 50km/c@50\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          24.70961,
+          41.5726
+        ],
+        "type": "Point"
+      },
+      "id": "f8325117474e7933264d9540caefb292"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 140km/c@140\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          26.07048,
+          42.4648
+        ],
+        "type": "Point"
+      },
+      "id": "f872bc388aacfd9367730f659b1dc22b"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "info": "Kamera za skorost 60km/c@60\r\n"
+      },
+      "geometry": {
+        "coordinates": [
+          25.68335,
+          42.43166
+        ],
+        "type": "Point"
+      },
+      "id": "fb0b1c9beb8b18b0eaffa1cef648f150"
+    }
+  ],
+  "type": "FeatureCollection"
+}
