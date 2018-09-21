@@ -16,6 +16,9 @@ sources:
         url_params:
             api_key: 3waeKsc0RMiVr4tEkJectg
         max_zoom: 16
+scene:
+    background:
+        color: [0.925, 0.929, 0.973, 1.00]
 
 textures:
     tex-marker-user-location:
