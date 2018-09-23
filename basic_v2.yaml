@@ -160,7 +160,7 @@ layers:
                 lines:
                     #cap: round
                     #join: round
-                    color: [0.788, 0.020, 0.020, 1.00]
+                    color: [0.545, 0.694, 0.714, 1.00]
                     width: [[13, 0px], [14, 2px], [16, 2.5px], [19, 8m]]
                     outline:
                         color: [0, global.earth1_r]
