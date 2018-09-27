@@ -1,3 +1,14 @@
+import:
+    #- https://www.nextzen.org/carto/refill-style/11/refill-style.zip
+
+
+global:
+    ux_language_text_source: |
+        function() {
+            // if a ux_langauge has been defined use that, else if there is feature name in the fallback_ux_language then use that, else use the feature's default name in the local language
+            return (global.ux_language && feature['name:'+global.ux_language]) || (global.ux_language_fallback && feature['name:'+global.ux_language_fallback]) || feature.name;
+        }
+
 cameras:
     camera1:
         type: perspective
@@ -15,6 +26,13 @@ sources:
         url: https://tile.nextzen.org/tilezen/vector/v1/all/{z}/{x}/{y}.topojson
         url_params:
             api_key: 3waeKsc0RMiVr4tEkJectg
+        max_zoom: 16
+    mapzen:
+        type: MVT #GeoJSON, MVT, TopoJSON
+        url:  https://tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt
+        url_params:
+            api_key: 3waeKsc0RMiVr4tEkJectg
+        tile_size: 512
         max_zoom: 16
 scene:
     background:
@@ -72,6 +90,7 @@ styles:
             size: [49px, 53px]
 
 layers:
+
     earth:
         data: { source: nextzen }
         draw:
@@ -266,4 +285,41 @@ layers:
             draw:
                 polygons: { visible: true }
                 lines: { visible: false }
+    places:
+        data: { source: nextzen, layer: places }
+        filter:
+            name: true
+        draw:
+            mapzen_icon_library:
+                visible: false
+                text:
+                    text_source: global.ux_language_text_source
+                    visible: true
+                    buffer: 3px
+                    font:
+                        family: global.text_font_family
+                        fill: [0.043, 0.008, 0.008, 1.00]
+        country:
+            filter:
+                kind: country
+                $zoom: { min: 2, max: 9 }
+            draw:
+                text-blend-order:
+                    priority: 3
+                    font:
+                        fill: [0.067, 0.012, 0.012, 1.00]
+                        weight: 600
+                        stroke: { color: [0.031, 0.024, 0.024, 1.00], width: 4px }
+            country-z6:
+                filter:
+                    $zoom: [6]
+                draw:
+                    text-blend-order:
+                        priority: 8
+                        font:
+                            size: 28px
+                            fill: [0.067, 0.012, 0.012, 1.00]
+                            weight: 600
+                            stroke: { color: [0.031, 0.024, 0.024, 1.00], width: 4px}
+
 
