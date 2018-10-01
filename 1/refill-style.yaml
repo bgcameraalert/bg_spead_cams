@@ -1710,7 +1710,7 @@ layers:
                     placement_spacing: [[17, 70px], [20, 175px]]
                     angle: auto
                     text:
-                        visible: false
+                        visible: true
 
         early:
             filter: { $zoom: { max: 15 } }
