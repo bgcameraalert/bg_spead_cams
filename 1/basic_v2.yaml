@@ -95,6 +95,14 @@ layers:
                     color: [0.824, 0.835, 0.929, 1.00]
                     width: [[12, 0px], [13, 1px], [15, 1px]]
                     visible: false
+            text-blend-order:
+                text_source: global.ux_language_text_source
+                visible: false    # labels are enabled by each layer below
+                font:
+                    family: global.text_font_family
+                    weight: normal
+                    fill: global.black_color
+
 
         highway:
             filter:
