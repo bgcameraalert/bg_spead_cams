@@ -19,6 +19,44 @@ sources:
 scene:
     background:
         color: [0.925, 0.929, 0.973, 1.00]
+styles:
+    marker-user-location:
+        base: points
+        draw:
+            collide: false
+            texture: tex-marker-user-location
+    marker-camera:
+        base: points
+        draw:
+            texture: tex-marker-camera
+            size: [49px, 53px]
+    marker-camera-highlight:
+        base: points
+        draw:
+            texture: tex-marker-camera-highlight
+            size: [49px, 53px]
+
+    mapzen_icon_library:
+        base: points
+        texture: mapzen_icon_library
+        blend_order: 1
+        # To make Refill's colorize-able icons play nice with other styles
+        mix: global.sdk_icon_color_style
+        draw:
+            size: global.icon_size
+            sprite: function() { return feature.kind; }
+            sprite_default: generic
+            buffer: 3px
+            text:
+                buffer: 3px
+                text_wrap: 18
+                max_lines: 3
+                font:
+                    family: 'Open Sans'
+                    weight: normal
+                    fill: [0.000, 0.000, 0.000, 1.00]
+                    size: [[13, 10px], [14, 11px], [17, 12px], [19, 12px], [20, 14px]]
+                    stroke: { color: [0.533, 0.200, 0.200, 1.00], width: [[12,2px],[16,4px]] }
 
 textures:
     tex-marker-user-location:
@@ -29,8 +67,8 @@ textures:
     tex-marker-camera-highlight:
         url: images/marker/CameraHighlight.png
 
-    icons:
-        url: images/pois.png
+    mapzen_icon_library:
+        url: images/refill@2x.png
         filtering: mipmap
         density: 5
         sprites:
@@ -717,23 +755,6 @@ textures:
 
 
 
-styles:
-    marker-user-location:
-        base: points
-        draw:
-            collide: false
-            texture: tex-marker-user-location
-    marker-camera:
-        base: points
-        draw:
-            texture: tex-marker-camera
-            size: [49px, 53px]
-    marker-camera-highlight:
-        base: points
-        draw:
-            texture: tex-marker-camera-highlight
-            size: [49px, 53px]
-
 layers:
     boundaries:
         data: { source: nextzen, layer: boundaries }
@@ -940,7 +961,7 @@ layers:
         filter: { oneway: yes, shield_text: false, $zoom: { min: 17 } }
         draw:
             points:
-                texture: icons
+                texture: mapzen_icon_library
                 sprite: arrow
                 size: [[17, 18px], [18, 20px], [20, 32px]]
                 placement: spaced
