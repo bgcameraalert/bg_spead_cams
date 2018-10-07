@@ -1,14 +1,3 @@
-import:
-    #- https://www.nextzen.org/carto/refill-style/11/refill-style.zip
-
-
-global:
-    ux_language_text_source: |
-        function() {
-            // if a ux_langauge has been defined use that, else if there is feature name in the fallback_ux_language then use that, else use the feature's default name in the local language
-            return (global.ux_language && feature['name:'+global.ux_language]) || (global.ux_language_fallback && feature['name:'+global.ux_language_fallback]) || feature.name;
-        }
-
 cameras:
     camera1:
         type: perspective
@@ -27,13 +16,6 @@ sources:
         url_params:
             api_key: 3waeKsc0RMiVr4tEkJectg
         max_zoom: 16
-    mapzen:
-        type: MVT #GeoJSON, MVT, TopoJSON
-        url:  https://tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt
-        url_params:
-            api_key: 3waeKsc0RMiVr4tEkJectg
-        tile_size: 512
-        max_zoom: 16
 scene:
     background:
         color: [0.925, 0.929, 0.973, 1.00]
@@ -48,8 +30,7 @@ textures:
         url: images/marker/CameraHighlight.png
 
     icons:
-        url: images/marker/Camera.png
-        #url: images/pois.png
+        url: images/pois.png
         filtering: mipmap
         sprites:
             # define sprites: [x origin, y origin, width, height]
@@ -90,6 +71,43 @@ styles:
             size: [49px, 53px]
 
 layers:
+    boundaries:
+        data: { source: nextzen, layer: boundaries }
+        # country subdivisions (states, provinces)
+        draw:
+            lines:
+                order: global.feature_order
+        country:
+            filter:
+                any:
+                    - kind: country
+                    - admin_level: 2
+            draw:
+                country-outerline:
+                    style: lines
+                    order: function() { return (feature.sort_rank -1); }
+                    color: global.light_color
+                    width: [[0, 0px], [4, 2px], [8, 5px], [14, 7px], [17, 14m]]
+                lines:
+                    color: global.white_color
+                    width: [[0, 0px], [5, 0px], [6, 1px], [14, 2px]]
+
+    places:
+        data: { source: nextzen }
+        filter:
+            name:en: true
+        country:
+            filter:
+                kind: country
+                $zoom: { min: 2, max: 9 }
+            draw:
+                text:
+                    font:
+                        family: HelveticaNeue-Bold
+                        size: 18px
+                        weight: 900
+                        fill: black
+                        transform: uppercase
 
     earth:
         data: { source: nextzen }
@@ -136,6 +154,13 @@ layers:
                     color: [0.824, 0.835, 0.929, 1.00]
                     width: [[12, 0px], [13, 1px], [15, 1px]]
                     visible: false
+            text:
+                text_source: name
+                font:
+                    priority: 59
+                    fill: [[13, [0.250,0.250,0.250]], [17, [0.00,0.00,0.00]]]
+                    size: [[5, 10px], [12, 13px]]
+                    stroke: { color: [1.00, 1.00, 1.00, 0.85], width: 4px }
 
         highway:
             filter:
@@ -143,7 +168,7 @@ layers:
             draw:
                 lines:
                     order: function() { return feature.sort_rank; }
-                    color: [0.200, 0.200, 0.996, 1.00]
+                    color: [0.616, 0.616, 0.659, 1.00]
                     width: [[5, 1px], [8, 2px], [14, 4.0px], [16, 6.5px], [17, 20m]]
                     outline:
                         color: [0.247, 0.345, 0.788, 1.00]
@@ -286,40 +311,31 @@ layers:
                 polygons: { visible: true }
                 lines: { visible: false }
     places:
-        data: { source: nextzen, layer: places }
+        data: { source: nextzen }
         filter:
-            name: true
-        draw:
-            mapzen_icon_library:
-                visible: false
-                text:
-                    text_source: global.ux_language_text_source
-                    visible: true
-                    buffer: 3px
-                    font:
-                        family: global.text_font_family
-                        fill: [0.043, 0.008, 0.008, 1.00]
+            name:en: true
         country:
             filter:
                 kind: country
                 $zoom: { min: 2, max: 9 }
             draw:
-                text-blend-order:
+                text:
+                    font:
+                        family: HelveticaNeue-Bold
+                        size: 18px
+                        weight: 900
+                        fill: [0.000, 0.000, 0.000, 1.00]
+                        transform: uppercase
+        country:
+            filter:
+                kind: country
+                $zoom: { min: 2, max: 9 }
+            draw:
+                text:
                     priority: 3
                     font:
-                        fill: [0.067, 0.012, 0.012, 1.00]
+                        size: [[5, 18px], [10, 18px]]
+                        fill: [0.290, 0.271, 0.271, 1.00]
                         weight: 600
-                        stroke: { color: [0.031, 0.024, 0.024, 1.00], width: 4px }
-            country-z6:
-                filter:
-                    $zoom: [6]
-                draw:
-                    text-blend-order:
-                        priority: 8
-                        font:
-                            size: 28px
-                            fill: [0.067, 0.012, 0.012, 1.00]
-                            weight: 600
-                            stroke: { color: [0.031, 0.024, 0.024, 1.00], width: 4px}
-
+                        stroke: { color: [1.000, 1.000, 1.000, 1.00], width: 4px }
 

@@ -202,6 +202,19 @@ layers:
                         color: [0.902, 0.973, 0.980, 1.00]
                         width: [[10, 1px], [14, 1px], [18, 1.5px]]
                         visible: false
+        labels-major_road:
+            filter: { $zoom: { min: 13 } }
+            draw:
+                text-blend-order:
+                    priority: 56
+                    visible: global.text_visible_secondary
+                    text_source: global.ux_language_text_source_road_ref_and_name_short
+                    font:
+                        fill: [[13, global.dark_color], [17, global.black_color]]
+                        size: [[13, 10px], [17, 13px]]
+                        stroke: { color: global.text_stroke, width: 4px }
+
+
         minor_road:
             filter:
                 kind: minor_road

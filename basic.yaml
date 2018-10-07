@@ -16,9 +16,6 @@ sources:
         url_params:
             api_key: 3waeKsc0RMiVr4tEkJectg
         max_zoom: 16
-scene:
-    background:
-        color: [0.925, 0.929, 0.973, 1.00]
 
 textures:
     tex-marker-user-location:
@@ -28,6 +25,8 @@ textures:
         url: images/marker/Camera.png
     tex-marker-camera-highlight:
         url: images/marker/CameraHighlight.png
+    tex-marker-red-light-camera:
+        url: images/marker/rm_red_light_cam@2x.png
 
 styles:
     marker-user-location:
@@ -47,27 +46,6 @@ styles:
             size: [49px, 53px]
 
 layers:
-    boundaries:
-        data: { source: nextzen, layer: boundaries }
-        # country subdivisions (states, provinces)
-        draw:
-            lines:
-                order: global.feature_order
-        country:
-            filter:
-                any:
-                    - kind: country
-                    - admin_level: 2
-            draw:
-                country-outerline:
-                    style: lines
-                    order: function() { return (feature.sort_rank -1); }
-                    color: global.light_color
-                    width: [[0, 0px], [4, 2px], [8, 5px], [14, 7px], [17, 14m]]
-                lines:
-                    color: global.white_color
-                    width: [[0, 0px], [5, 0px], [6, 1px], [14, 2px]]
-
     places:
         data: { source: nextzen }
         filter:
@@ -85,30 +63,29 @@ layers:
                         fill: black
                         transform: uppercase
 
+    pois:
+        data: { source: nextzen }
+        filter:
+            kind: traffic_signals
+        draw:
+            points:
+                texture: tex-marker-red-light-camera
+                size: [35px, 32px]
+
     earth:
         data: { source: nextzen }
         draw:
             polygons:
                 order: function() { return feature.sort_rank; }
-                color: [0.925, 0.929, 0.973, 1.00]
+                color: [0.976, 0.961, 0.929, 1.00]
 
     landuse:
         data: { source: nextzen }
         draw:
             polygons:
                 order: function() { return feature.sort_rank; }
-                color: [0.925, 0.929, 0.973, 1.00]
+                color: [0.976, 0.961, 0.929, 1.00]
 
-        parks:
-            filter:
-                all:
-                    - $zoom: { min: 3 }
-                    - kind: [park, national_park]
-            # default for national forests and more?
-            draw:
-                polygons:
-                    color: [0.580, 0.937, 0.620, 1.00]
-                    visible: true
     water:
         data: { source: nextzen }
         draw:
@@ -122,30 +99,25 @@ layers:
         draw:
             lines:
                 order: function() { return feature.sort_rank; }
-                color: [0.537, 0.663, 0.702, 1.00]
-                cap: butt
+                color: [0.988, 0.988, 0.867, 1.00]
+                cap: round
                 width: [[13, 0px], [14, 2px], [16, 12px], [19, 12]]
                 outline:
-                    color: [0.824, 0.835, 0.929, 1.00]
+                    color: [0.965, 0.800, 0.596, 1.00]
                     width: [[12, 0px], [13, 1px], [15, 1px]]
             text:
-                text_source: name
                 font:
-                    priority: 59
-                    fill: [[13, [0.250,0.250,0.250]], [17, [0.00,0.00,0.00]]]
-                    size: [[13, 10px], [17, 13px]]
-                    stroke: { color: [1.00, 1.00, 1.00, 0.85], width: 4px }
-
+                    fill: black
         highway:
             filter:
                 kind: highway
             draw:
                 lines:
                     order: function() { return feature.sort_rank; }
-                    color: [0.200, 0.200, 0.996, 1.00]
+                    color: [0.996, 0.871, 0.200, 1.00]
                     width: [[5, 1px], [8, 2px], [14, 4.0px], [16, 6.5px], [17, 20m]]
                     outline:
-                        color: [0.247, 0.345, 0.788, 1.00]
+                        color: [0.941, 0.639, 0.439, 1.00]
                         width: [[9, 0.5px], [12, 1px], [16, 2px], [18, 6px]]
         minor_road:
             filter:
@@ -156,13 +128,13 @@ layers:
                     color: [1.0, 1.0, 1.0, 1.00]
                     width: 8
                     outline:
-                        color: [0.686, 0.788, 0.855, 1.00]
+                        color: [0.804, 0.757, 0.702, 1.00]
                         width: [[14, 0px], [15, 0.5px], [17, 0.75px], [19, 2px]]
         service_road:
             filter: { kind: minor_road, kind_detail: service }
             draw:
                 lines:
-                    color: [0.851, 0.894, 0.949, 1.00]
+                    color: [1.000, 1.000, 1.000, 1.00]
                     width: [[13, 0.5px], [17, 3px], [18, 4m]]
                     outline:
                         color: [0.804, 0.757, 0.702, 1.00]
@@ -180,31 +152,3 @@ layers:
                     outline:
                         color: [0.710, 0.149, 0.149, 1.00]
                         width: [[15, 0px], [17, 0px], [18, 1px]]
-
-    buildings:
-        data: { source: nextzen, layer: buildings }
-        filter:
-            not: { location: underground }
-        # set default footprint and extrusion draw properties, but don't draw by default (rules below will turn visibility on)
-        draw:
-            polygons:
-                visible: false
-                order: 329
-                color: [0.792, 0.839, 0.863, 1.00]
-
-        # building footprints, pre-extrusion
-        footprints:
-            filter:
-                # show footprints for buildings at least one zoom level before they will be extruded
-                - { $zoom: 13, scale_rank: [1,2] }
-                - { $zoom: 14, scale_rank: [1,2,3] }
-                - { $zoom: 15, height: { min: 100 } }
-                - { $zoom: 15, area: { min: 500 } }
-                - { $zoom: 15, volume: { min: 100000 } }
-                - { $zoom: 16, area: { min: 100 } }
-                - { $zoom: 16, volume: { min: 50000 } }
-                - { $zoom: { min: 17 }, area: true }
-            draw:
-                polygons: { visible: true }
-                lines: { visible: false }
-
