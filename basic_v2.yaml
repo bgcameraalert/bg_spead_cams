@@ -831,11 +831,12 @@ layers:
                 points:
                     texture: icons
                     sprite: arrow
-                    size: [[13, '11px'], [16, '13px'], [18, '15px']]
+                    size: [[13, '11px'], [14, '13px'], [18, '15px']]
                     placement: spaced
                     placement_spacing: [[17, 70px], [20, 175px]]
                     angle: auto
                     text:
+                        visible: false
                         buffer: 3px
                         text_wrap: 18
                         max_lines: 3
