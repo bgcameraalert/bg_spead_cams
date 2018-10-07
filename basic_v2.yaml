@@ -835,20 +835,6 @@ layers:
                     placement: spaced
                     placement_spacing: [[17, 70px], [20, 175px]]
                     angle: auto
-                    text:
-                        visible: false
-                        buffer: 3px
-                        text_wrap: 18
-                        max_lines: 3
-                        font:
-                            family: global.text_font_family
-                            weight: normal
-                            fill: [0.000, 0.000, 0.000, 1.00]
-                            size: [[13, 10px], [14, 11px], [17, 12px], [19, 12px], [20, 14px]]
-                            stroke: { color: global.text_stroke, width: [[12,2px],[16,4px]] }
-
-
-
 
         highway:
             filter:
