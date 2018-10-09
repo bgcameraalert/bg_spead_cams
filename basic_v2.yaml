@@ -834,7 +834,7 @@ layers:
                     sprite: arrow
                     size: [[13, '11px'], [14, '13px'], [18, '15px']]
                     placement: spaced
-                    placement_spacing: [[17, 200px], [20, 400px]]
+                    placement_spacing: [[17, 50px], [20, 400px]]
                     angle: auto
 
         highway:
