@@ -835,7 +835,7 @@ layers:
                     size: [[13, '11px'], [14, '13px'], [18, '15px']]
                     placement: spaced
                     placement_spacing: [[17, 100px], [20, 575px]]
-                    angle: points
+                    angle: auto
 
         highway:
             filter:
