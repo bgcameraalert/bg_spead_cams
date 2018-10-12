@@ -142,7 +142,7 @@ layers:
                     width: [[12, 0px], [13, 1px], [15, 1px]]
                     visible: false
             text:
-		collide: true
+		collide: false
                 text_source: name
                 font:
                     priority: 59
