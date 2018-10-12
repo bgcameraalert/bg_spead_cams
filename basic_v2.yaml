@@ -28,11 +28,13 @@ styles:
     marker-camera:
         base: points
         draw:
+            collide: false
             texture: tex-marker-camera
             size: [49px, 53px]
     marker-camera-highlight:
         base: points
         draw:
+            collide: false
             texture: tex-marker-camera-highlight
             size: [49px, 53px]
 

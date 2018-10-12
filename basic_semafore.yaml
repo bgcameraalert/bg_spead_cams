@@ -1,0 +1,154 @@
+cameras:
+    camera1:
+        type: perspective
+
+lights:
+    light1:
+        type: ambient
+        direction: [0, 1, -.5]
+        diffuse: [1.000, 1.000, 1.000, 1.00]
+        ambient: [1.000, 1.000, 1.000, 1.00]
+
+sources:
+    nextzen:
+        type: TopoJSON
+        url: https://tile.nextzen.org/tilezen/vector/v1/all/{z}/{x}/{y}.topojson
+        url_params:
+            api_key: 3waeKsc0RMiVr4tEkJectg
+        max_zoom: 16
+
+textures:
+    tex-marker-user-location:
+        url: images/marker/UserLocation.png
+        size: [32px, 32px]
+    tex-marker-camera:
+        url: images/marker/Camera.png
+    tex-marker-camera-highlight:
+        url: images/marker/CameraHighlight.png
+    tex-marker-red-light-camera:
+        url: images/marker/rm_red_light_cam@2x.png
+
+styles:
+    marker-user-location:
+        base: points
+        draw:
+            collide: false
+            texture: tex-marker-user-location
+    marker-camera:
+        base: points
+        draw:
+            texture: tex-marker-camera
+            size: [49px, 53px]
+    marker-camera-highlight:
+        base: points
+        draw:
+            texture: tex-marker-camera-highlight
+            size: [49px, 53px]
+
+layers:
+    places:
+        data: { source: nextzen }
+        filter:
+            name:en: true
+        country:
+            filter:
+                kind: country
+                $zoom: { min: 2, max: 9 }
+            draw:
+                text:
+                    font:
+                        family: HelveticaNeue-Bold
+                        size: 18px
+                        weight: 900
+                        fill: black
+                        transform: uppercase
+
+    pois:
+        data: { source: nextzen }
+        filter:
+            kind: traffic_signals
+        draw:
+            points:
+                texture: tex-marker-red-light-camera
+                size: [35px, 32px]
+
+    earth:
+        data: { source: nextzen }
+        draw:
+            polygons:
+                order: function() { return feature.sort_rank; }
+                color: [0.976, 0.961, 0.929, 1.00]
+
+    landuse:
+        data: { source: nextzen }
+        draw:
+            polygons:
+                order: function() { return feature.sort_rank; }
+                color: [0.976, 0.961, 0.929, 1.00]
+
+    water:
+        data: { source: nextzen }
+        draw:
+            polygons:
+                order: function() { return feature.sort_rank; }
+                color: [0.627, 0.855, 0.949, 1.00]
+    roads:
+        data: { source: nextzen }
+        filter:
+            not: { kind: [path, rail, ferry] }
+        draw:
+            lines:
+                order: function() { return feature.sort_rank; }
+                color: [0.988, 0.988, 0.867, 1.00]
+                cap: round
+                width: [[13, 0px], [14, 2px], [16, 12px], [19, 12]]
+                outline:
+                    color: [0.965, 0.800, 0.596, 1.00]
+                    width: [[12, 0px], [13, 1px], [15, 1px]]
+            text:
+                font:
+                    fill: black
+        highway:
+            filter:
+                kind: highway
+            draw:
+                lines:
+                    order: function() { return feature.sort_rank; }
+                    color: [0.996, 0.871, 0.200, 1.00]
+                    width: [[5, 1px], [8, 2px], [14, 4.0px], [16, 6.5px], [17, 20m]]
+                    outline:
+                        color: [0.941, 0.639, 0.439, 1.00]
+                        width: [[9, 0.5px], [12, 1px], [16, 2px], [18, 6px]]
+        minor_road:
+            filter:
+                kind: minor_road
+            draw:
+                lines:
+                    order: function() { return feature.sort_rank; }
+                    color: [1.0, 1.0, 1.0, 1.00]
+                    width: 8
+                    outline:
+                        color: [0.804, 0.757, 0.702, 1.00]
+                        width: [[14, 0px], [15, 0.5px], [17, 0.75px], [19, 2px]]
+        service_road:
+            filter: { kind: minor_road, kind_detail: service }
+            draw:
+                lines:
+                    color: [1.000, 1.000, 1.000, 1.00]
+                    width: [[13, 0.5px], [17, 3px], [18, 4m]]
+                    outline:
+                        color: [0.804, 0.757, 0.702, 1.00]
+                        width: [[15, 0px], [16, 0px], [19, 2px]]
+        path:
+            filter:
+                all:
+                    - kind: [path, portage_way]
+                not:
+                    - kind_detail: [steps, track, pier]
+            draw:
+                lines:
+                    color: [0.886, 0.039, 0.039, 1.00]
+                    width: [[14, 0.5px], [15, 1.5px], [17, 3m]]
+                    outline:
+                        color: [0.710, 0.149, 0.149, 1.00]
+                        width: [[15, 0px], [17, 0px], [18, 1px]]
