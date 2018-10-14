@@ -146,6 +146,7 @@ layers:
             text:
                 text_source: name
                 font:
+                    collide: false
                     priority: 59
                     fill: [[13, [0.250,0.250,0.250]], [17, [0.00,0.00,0.00]]]
                     size: [[5, 10px], [12, 13px]]
@@ -160,7 +161,7 @@ layers:
                     sprite: arrow
                     size: [[13, '11px'], [14, '13px'], [18, '15px']]
                     placement: spaced
-                    placement_spacing: [[17, 50px], [20, 400px]]
+                    placement_spacing: [[17, 50px], [20, 200px]]
                     angle: auto
 
         highway:
