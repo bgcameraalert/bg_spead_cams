@@ -1,3 +1,7 @@
+import:
+    - 1/refill-style.yaml
+
+
 cameras:
     camera1:
         type: perspective
@@ -146,7 +150,7 @@ layers:
             text:
                 text_source: name
                 font:
-                    collide: false
+                    collide: true
                     priority: 59
                     fill: [[13, [0.250,0.250,0.250]], [17, [0.00,0.00,0.00]]]
                     size: [[5, 10px], [12, 13px]]
