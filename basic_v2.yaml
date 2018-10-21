@@ -77,7 +77,7 @@ layers:
         # country subdivisions (states, provinces)
         draw:
             lines:
-                order: global.feature_order
+                order: function() { return feature.sort_rank; }
         country:
             filter:
                 any:
@@ -87,10 +87,10 @@ layers:
                 country-outerline:
                     style: lines
                     order: function() { return (feature.sort_rank -1); }
-                    color: global.light_color
+                    color: [1.000, 1.000, 1.000, 1.00]
                     width: [[0, 0px], [4, 2px], [8, 5px], [14, 7px], [17, 14m]]
                 lines:
-                    color: global.white_color
+                    color: [0.914, 0.902, 0.902, 1.00]
                     width: [[0, 0px], [5, 0px], [6, 1px], [14, 2px]]
 
     places:
