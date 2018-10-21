@@ -159,12 +159,12 @@ layers:
                     visible: false
             text:
                 text_source: name
-                repeat_distance: 400px
+                repeat_distance: 100px
                 font:
                     collide: false
                     priority: 59
                     fill: [[13, [0.250,0.250,0.250]], [17, [0.00,0.00,0.00]]]
-                    size: [[5, 5px], [17, 10px], [18, 15px]]
+                    size: [[5, 5px], [14, 18px], [17, 10px]]
                     stroke: { color: [1.00, 1.00, 1.00, 0.85], width: 4px }
         arrows:
             # oneway arrows and shields are distinct groups!
@@ -176,7 +176,7 @@ layers:
                     sprite: arrow
                     size: [[13, '11px'], [14, '13px'], [18, '15px']]
                     placement: spaced
-                    placement_spacing: [[17, 250px], [20, 500px]]
+                    placement_spacing: [[17, 450px], [20, 500px]]
                     angle: auto
                     text:
                         visible: false
