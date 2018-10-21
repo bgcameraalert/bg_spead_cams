@@ -29,6 +29,7 @@ styles:
         base: points
         draw:
             priority: 1
+            anchor: top
             collide: false
             texture: tex-marker-camera
             size: [49px, 53px]
@@ -36,6 +37,7 @@ styles:
         base: points
         draw:
             priority: 1
+            anchor: top
             collide: false
             texture: tex-marker-camera-highlight
             size: [49px, 53px]
