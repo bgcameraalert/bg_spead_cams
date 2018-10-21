@@ -159,7 +159,7 @@ layers:
                     visible: false
             text:
                 text_source: name
-                repeat_distance: 200px
+                repeat_distance: 400px
                 font:
                     collide: false
                     priority: 59
