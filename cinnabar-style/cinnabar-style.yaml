@@ -1359,7 +1359,7 @@ layers:
                     width: [[13, 0px], [14, 2px], [16, 2.5px], [19, 8m]]
                     outline:
                         color: [[0, global.earth1_r], [13, global.major_casing1]]
-                        width: [[12, 0px], [13, .5px], [15, 1px]]
+                        #width: [[12, 0px], [13, .5px], [15, 1px]]
             trunk_primary:
                 filter: { kind_detail: [trunk, primary] }
                 draw:
