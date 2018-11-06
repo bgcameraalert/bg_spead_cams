@@ -309,11 +309,13 @@ cameras:
 styles:
     marker-user-location:
         base: points
+        blend_order: 1
         draw:
             collide: false
             texture: tex-marker-user-location
     marker-camera:
         base: points
+        blend_order: 1
         draw:
             priority: 1
             anchor: top
@@ -322,6 +324,7 @@ styles:
             size: [49px, 53px]
     marker-camera-highlight:
         base: points
+        blend_order: 1
         draw:
             priority: 1
             anchor: top
@@ -374,7 +377,7 @@ styles:
         blend: overlay
     text-blend-order:
         base: text
-        blend_order: 1
+        blend_order: 2
     ux-route-line-overlay:
         base: lines
         blend: overlay
