@@ -307,6 +307,28 @@ cameras:
         axis: [0, .1] # very small building extrusion
 
 styles:
+    marker-user-location:
+        base: points
+        draw:
+            collide: false
+            texture: tex-marker-user-location
+    marker-camera:
+        base: points
+        draw:
+            priority: 1
+            anchor: top
+            collide: false
+            texture: tex-marker-camera
+            size: [49px, 53px]
+    marker-camera-highlight:
+        base: points
+        draw:
+            priority: 1
+            anchor: top
+            collide: false
+            texture: tex-marker-camera-highlight
+            size: [49px, 53px]
+
     dashed:
         base: lines
         dash: [1.25, 1.25]
@@ -3759,6 +3781,14 @@ layers:
                         fill: global.text_fill_pois
                         size: [[13, 10px], [14, 11px], [17, 12px], [19, 12px], [20, 14px]]
                         stroke: { color: global.text_stroke, width: [[12, 3px],[16, 4px]] }
+        traffic_signals:
+            filter:
+                kind: traffic_signals
+            draw:
+                points:
+            texture: tex-marker-red-light-camera
+            size: [35px, 32px]
+
         # improve legibility at high zooms
         poi_labels-z18:
             filter: { $zoom: { min: 18 } }

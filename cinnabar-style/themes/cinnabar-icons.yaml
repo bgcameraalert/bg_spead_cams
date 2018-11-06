@@ -39,6 +39,16 @@ styles:
                     stroke: { color: global.text_stroke, width: [[12, 3px],[16, 4px]] }
 
 textures:
+    tex-marker-user-location:
+        url: ../images/marker/UserLocation.png
+        size: [32px, 32px]
+    tex-marker-camera:
+        url: ../images/marker/Camera.png
+    tex-marker-camera-highlight:
+        url: ../images/marker/CameraHighlight.png
+    tex-marker-red-light-camera:
+        url: ../images/marker/rm_red_light_cam@2x.png
+
     mapzen_icon_library:
         url: ../images/refill@2x.png
         filtering: mipmap
