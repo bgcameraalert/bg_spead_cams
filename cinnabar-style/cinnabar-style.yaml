@@ -1355,7 +1355,7 @@ layers:
                 lines:
                     #cap: round
                     #join: round
-                    color: [[8, global.major_road4], [13, major_road2], [17, global.major_road1]]
+                    #color: [[8, global.major_road4], [13, major_road2], [17, global.major_road1]]
                     width: [[13, 0px], [14, 2px], [16, 2.5px], [19, 8m]]
                     outline:
                         color: [[0, global.earth1_r], [13, global.major_casing1]]
