@@ -18,7 +18,7 @@ import:
 global:
     # Sign up for a Mapzen API key to enjoy higher rate limits
     # https://mapzen.com/documentation/overview/#developer-accounts-and-api-keys
-    sdk_api_key: ''     # set this value to your Mapzen API key
+    sdk_api_key: 3waeKsc0RMiVr4tEkJectg     # set this value to your Mapzen API key
 
     #ux/ui
     ux_language: false             # l10n language code, trusting OSM in v0.10 tiles, fixed in v1.0 tiles
@@ -235,8 +235,8 @@ global:
 
 sources:
     mapzen:
-        type: MVT #GeoJSON, MVT, TopoJSON
-        url:  https://tile.nextzen.org/tilezen/vector/v1/512/all/{z}/{x}/{y}.mvt
+        type: TopoJSON #GeoJSON, MVT, TopoJSON
+        url:  https://tile.nextzen.org/tilezen/vector/v1/all/{z}/{x}/{y}.topojson
         url_params:
             api_key: global.sdk_api_key
         tile_size: 512
@@ -303,7 +303,7 @@ sources:
 
 cameras:
     isometric:
-        type: isometric
+        type: flat
         axis: [0, .1] # very small building extrusion
 
 styles:
@@ -2100,9 +2100,12 @@ layers:
                                 /^N.*$/.test(feature.ref) ||
                                 /^MEX.*$/.test(feature.ref)
                     }
-                # draw:
-                #     mapzen_icon_library:
-                #         color: pink
+                draw:
+                    mapzen_icon_library:
+                        #color: pink
+                        visible: true
+                        size: [[7, 8px], [13, 12px], [15, 18px]]
+
 
                 # US Interstate roads
                 US-I:
