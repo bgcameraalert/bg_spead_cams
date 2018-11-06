@@ -3786,8 +3786,8 @@ layers:
                 kind: traffic_signals
             draw:
                 points:
-            texture: tex-marker-red-light-camera
-            size: [35px, 32px]
+                    texture: tex-marker-red-light-camera
+                    size: [35px, 32px]
 
         # improve legibility at high zooms
         poi_labels-z18:
