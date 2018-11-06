@@ -1367,6 +1367,7 @@ layers:
                         color: [[8, global.major_road5], [9, global.major_road2], [14, global.major_road2], [15, global.major_road1b], [17, global.major_road1]]
                         width: [[8, 0.6px], [9, 0.75px], [10, 1.5px], [13, 2.5px], [14, 4.5px], [15, 5.5px], [16, 7.0px], [19, 14m]]
                         outline:
+                            color: [[0, global.earth1_r], [13, global.major_casing1]]
                             width: [[8, 0px], [9, 0.5px], [10, 1px], [12, 1.25px], [14, 1.5px], [16, 2.5px], [18, 4.5px]]
                 early:
                     filter: { $zoom: { max: 16 } }
