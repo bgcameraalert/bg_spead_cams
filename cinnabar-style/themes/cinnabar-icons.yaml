@@ -21,7 +21,7 @@ styles:
     mapzen_icon_library:
         base: points
         texture: mapzen_icon_library
-        blend_order: 1
+        blend_order: 2
         draw:
             size: global.icon_size
             sprite: function() { return feature.kind; }
