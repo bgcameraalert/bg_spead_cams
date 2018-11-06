@@ -150,6 +150,6 @@ global:
     beach:              [0.906,0.929,0.659]     # beach
     building1:          [0.800,0.800,0.800]     # building
     building2:          [0.600,0.600,0.600]     # building stroke
-    sdk_building_extrude:  true                 # building extrude
+    sdk_building_extrude:  false                # building extrude
     building_extrude_height: |                  # building extrude height logic
         function() { return feature.height || 20; }
