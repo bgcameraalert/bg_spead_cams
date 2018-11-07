@@ -1256,7 +1256,13 @@ layers:
                         # except bridges and tunnels, their outlines should also self-sort
                         order: global.feature_order
 
-
+        # default outlines starting at zoom 16
+        default-outline-width:
+            filter: { $zoom: { min: 16 } }
+            draw:
+                lines:
+                    outline:
+                        width: function () { return 3/16 * Math.log($zoom); }
 
         natural_earth_highways:
             filter: { $zoom: { min: 5, max: 8 } }
