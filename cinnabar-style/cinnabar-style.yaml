@@ -1360,8 +1360,8 @@ layers:
             # default style
             draw:
                 lines:
-                    #cap: round
-                    #join: round
+                    cap: butt
+                    join: none
                     color: [[8, global.major_road4], [13, major_road2], [17, global.major_road1]]
                     width: [[13, 0px], [14, 2px], [16, 2.5px], [19, 8m]]
                     outline:
@@ -2743,20 +2743,28 @@ layers:
                     - { $zoom: [13], scale_rank: [1,2] }
                     - { $zoom: [14], scale_rank: [1,2,3] }
                     - { $zoom: [15], area: { min: 5000 }, name: true }
-                    - { $zoom: [15], area: { min: 5000 }, kind: true }
-                    - { $zoom: [15], area: { min: 3000 }, landuse_kind: true }
+                    #- { $zoom: [15], area: { min: 5000 }, kind: true }
+                    #- { $zoom: [15], area: { min: 3000 }, landuse_kind: true }
                     - { $zoom: [15], height: { min: 100 } }
                     - { $zoom: [15], volume: { min: 100000 } }
                     - { $zoom: [16], area: { min: 1000 }, name: true }
                     - { $zoom: [16], area: { min: 1000 }, kind: true }
                     - { $zoom: [16], area: { min: 2000 }, landuse_kind: true }
                     - { $zoom: [16], volume: { min: 50000 } }
-                    - { $zoom: { min: 17 } }
+                    - { $zoom: { min: 16 } }
             draw:
                 polygons:
                     visible: true
                 lines:
                     visible: true
+            max_zoom:
+                filter:
+                    $zoom: { min: 18 }
+                draw:
+                    polygons:
+                        visible: true
+                    lines:
+                        visible: false
 
             extrude:
                 filter:
