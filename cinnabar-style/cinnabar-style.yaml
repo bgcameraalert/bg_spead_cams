@@ -1463,7 +1463,7 @@ layers:
                             color: global.major_casing1
                             width: [[10, 1px], [14, 1px], [18, 1.5px]]
             tunnel:
-                filter: {is_tunnel: true, $zoom: {min: 13} }
+                filter: {is_tunnel: true, $zoom: {min: 16} }
                 draw:
                     lines:
                         color: global.major_tunnel1
