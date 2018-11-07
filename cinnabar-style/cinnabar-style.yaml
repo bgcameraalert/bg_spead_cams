@@ -1466,7 +1466,7 @@ layers:
                 filter: {is_tunnel: true, $zoom: {min: 13} }
                 draw:
                     lines:
-                        color: global.major_tunnel1
+                        #color: global.major_tunnel1
                         outline:
                             color: global.major_tunnel_casing1
             secondary:
