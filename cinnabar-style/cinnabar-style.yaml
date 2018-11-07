@@ -302,8 +302,8 @@ sources:
 #        url: https://gist.githubusercontent.com/anonymous/88235c795bb44b8c45150bdd5561f947/raw/71d4fab97b6513833bf1a589167119e6169ef86d/map.geojson
 
 cameras:
-    isometric:
-        type: flat
+    camera1:
+        type: perspective
         axis: [0, .1] # very small building extrusion
 
 styles:
