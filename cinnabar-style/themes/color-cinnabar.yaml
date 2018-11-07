@@ -79,7 +79,7 @@ global:
     green2_r:                   [0.700,0.700,0.700] # cemetery road
     hospital_r:                 [0.788,0.708,0.708] # hospital roads
     university_r:               '#cec1b2'           # university roads
-
+    gray1_e:                    grey
     # boundaries:
     country_boundary:           [1.000,1.000,1.000]
     region_boundary:            [0.933,0.933,0.933]

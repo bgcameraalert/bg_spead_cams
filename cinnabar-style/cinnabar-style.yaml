@@ -452,153 +452,154 @@ scene:
         color: global.earth1
 
 layers:
-    # Map overlays for styling the server response (using special source layer names) for route line, current location, and search result pins
-    mz_route_line:
-        data: { source: mz_route_line }
-        draw:
-            ux-route-line-overlay:
-                interactive: global.sdk_interactive
-                color: black
-                order: 500
-                width: [[0,3.5px],[5,5px],[9,7px],[10,6px],[11,6px],[13,8px],[14,9px],[15,10px],[16,11px],[17,12px],[18,10px]]
-    mz_route_line_dash:
-        data: { source: mz_dash_line }
-        draw:
-            ux-route-line-dash-overlay:
-                interactive: global.sdk_interactive
-                color: '#06a6d4'
-                order: 500
-                width: [[2,2px],[5,2.5px],[11,3px],[16,7px],[17,9px]]
-    mz_route_line_transit:
-        data: { source: mz_route_line_transit }
-        draw:
-            ux-transit-line-overlay:
-                # each transit route segment could be a different "line" each with it's own color
-                # but some transit lines don't define a color, in those cases default to blue
-                # and since the color is coming from Transit.land they call it "color" instead of "colour"
-                interactive: global.sdk_interactive
-                color: function() { return feature.color || '#06a6d4'; }
-                order: 500
-                width: [[0,3.5px],[5,5px],[9,7px],[10,6px],[11,6px],[13,8px],[14,9px],[15,10px],[16,11px],[17,12px],[18,10px]]
-    mz_current_location_gem:
-        data: { source: mz_current_location }
-        draw:
-            ux-location-gem-overlay:
-                interactive: global.sdk_interactive
-                sprite: ux-current-location
-                size: 36px
-                collide: false
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-    mz_route_location:
-        data: { source: mz_route_location }
-        draw:
-            ux-location-gem-overlay:
-                interactive: global.sdk_interactive
-                sprite: ux-route-arrow
-                size: [60px,60px]
-                collide: false
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-    mz_route_start:
-        data: { source: mz_route_start }
-        draw:
-            ux-icons-overlay:
-                interactive: global.sdk_interactive
-                priority: 1
-                sprite: ux-route-start
-                size: [36px,46px]
-                collide: false
-                anchor: top
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-    mz_route_stop:
-        data: { source: mz_route_stop }
-        draw:
-            ux-icons-overlay:
-                interactive: global.sdk_interactive
-                priority: 1
-                sprite: ux-route-stop
-                size: [36px,46px]
-                collide: false
-                anchor: top
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-    mz_route_transit_stop:
-        data: { source: mz_route_transit_stop }
-        draw:
-            ux-icons-overlay:
-                interactive: global.sdk_interactive
-                sprite: ux-transit-stop
-                size: [15px,15px]
-                collide: false
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-    mz_search_result:
-        data: { source: mz_search_result }
-        draw:
-            ux-icons-overlay:
-                interactive: global.sdk_interactive
-                sprite: ux-search-active
-                size: [36px,54px]
-                collide: false
-                anchor: top
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-        inactive:
-            filter: { state: inactive }
-            draw:
-                ux-icons-overlay:
-                    sprite: ux-search-inactive
-    mz_dropped_pin:
-        data: { source: mz_dropped_pin }
-        draw:
-            ux-icons-overlay:
-                interactive: global.sdk_interactive
-                sprite: ux-search-active
-                size: [36px,54px]
-                collide: false
-                anchor: top
-                transition: { show: { time: 0s }, hide: { time: 0s } }
 
-    # Used by the SDK to place point, line, and polygon overlays on the map
-    mz_default_point:
-        data: { source: mz_default_point }
-        draw:
-            sdk-point-overlay:
-                interactive: global.sdk_interactive
-                sprite: ux-search-active
-                size: [36px,54px]
-                collide: false
-                anchor: top
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-    mz_default_shield:
-        data: { source: mz_default_shield }
-        draw:
-            sdk-shield-overlay:
-                interactive: global.sdk_interactive
-                sprite: |
-                    function() {
-                        if( feature.ref ) {
-                            return ('sdk_shield-' + feature.ref.length + 'char');
-                        } else {
-                            return ('sdk_shield-' + feature.name.length + 'char');
-                        }
-                    }
-                sprite_default: sdk_shield-1char
-                color: global.sdk_shield_color
-                collide: false
-                transition: { show: { time: 0s }, hide: { time: 0s } }
-                text:
-                    # offset: [0px, -1px]
-                    text_source: |
-                        function() {
-                            if( feature.ref ) {
-                                return feature.ref;
-                            } else {
-                                return feature.name;
-                            }
-                        }
-                    anchor: center
-                    font:
-                        family: Montserrat
-                        fill: global.sdk_shield_text_color
-                        style: bold
-                        size: [[7,7px],[12,8px],[16,11px]]
+    # Map overlays for styling the server response (using special source layer names) for route line, current location, and search result pins
+#    mz_route_line:
+#        data: { source: mz_route_line }
+#        draw:
+#            ux-route-line-overlay:
+#                interactive: global.sdk_interactive
+#                color: black
+#                order: 500
+#                width: [[0,3.5px],[5,5px],[9,7px],[10,6px],[11,6px],[13,8px],[14,9px],[15,10px],[16,11px],[17,12px],[18,10px]]
+#    mz_route_line_dash:
+#        data: { source: mz_dash_line }
+#        draw:
+#            ux-route-line-dash-overlay:
+#                interactive: global.sdk_interactive
+#                color: '#06a6d4'
+#                order: 500
+#                width: [[2,2px],[5,2.5px],[11,3px],[16,7px],[17,9px]]
+#    mz_route_line_transit:
+#        data: { source: mz_route_line_transit }
+#        draw:
+#            ux-transit-line-overlay:
+#                # each transit route segment could be a different "line" each with it's own color
+#                # but some transit lines don't define a color, in those cases default to blue
+#                # and since the color is coming from Transit.land they call it "color" instead of "colour"
+#                interactive: global.sdk_interactive
+#                color: function() { return feature.color || '#06a6d4'; }
+#                order: 500
+#                width: [[0,3.5px],[5,5px],[9,7px],[10,6px],[11,6px],[13,8px],[14,9px],[15,10px],[16,11px],[17,12px],[18,10px]]
+#    mz_current_location_gem:
+#        data: { source: mz_current_location }
+#        draw:
+#            ux-location-gem-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: ux-current-location
+#                size: 36px
+#                collide: false
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#    mz_route_location:
+#        data: { source: mz_route_location }
+#        draw:
+#            ux-location-gem-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: ux-route-arrow
+#                size: [60px,60px]
+#                collide: false
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#    mz_route_start:
+#        data: { source: mz_route_start }
+#        draw:
+#            ux-icons-overlay:
+#                interactive: global.sdk_interactive
+#                priority: 1
+#                sprite: ux-route-start
+#                size: [36px,46px]
+#                collide: false
+#                anchor: top
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#    mz_route_stop:
+#        data: { source: mz_route_stop }
+#        draw:
+#            ux-icons-overlay:
+#                interactive: global.sdk_interactive
+#                priority: 1
+#                sprite: ux-route-stop
+#                size: [36px,46px]
+#                collide: false
+#                anchor: top
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#    mz_route_transit_stop:
+#        data: { source: mz_route_transit_stop }
+#        draw:
+#            ux-icons-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: ux-transit-stop
+#                size: [15px,15px]
+#                collide: false
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#    mz_search_result:
+#        data: { source: mz_search_result }
+#        draw:
+#            ux-icons-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: ux-search-active
+#                size: [36px,54px]
+#                collide: false
+#                anchor: top
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#        inactive:
+#            filter: { state: inactive }
+#            draw:
+#                ux-icons-overlay:
+#                    sprite: ux-search-inactive
+#    mz_dropped_pin:
+#        data: { source: mz_dropped_pin }
+#        draw:
+#            ux-icons-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: ux-search-active
+#                size: [36px,54px]
+#                collide: false
+#                anchor: top
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#
+#    # Used by the SDK to place point, line, and polygon overlays on the map
+#    mz_default_point:
+#        data: { source: mz_default_point }
+#        draw:
+#            sdk-point-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: ux-search-active
+#                size: [36px,54px]
+#                collide: false
+#                anchor: top
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#    mz_default_shield:
+#        data: { source: mz_default_shield }
+#        draw:
+#            sdk-shield-overlay:
+#                interactive: global.sdk_interactive
+#                sprite: |
+#                    function() {
+#                        if( feature.ref ) {
+#                            return ('sdk_shield-' + feature.ref.length + 'char');
+#                        } else {
+#                            return ('sdk_shield-' + feature.name.length + 'char');
+#                        }
+#                    }
+#                sprite_default: sdk_shield-1char
+#                color: global.sdk_shield_color
+#                collide: false
+#                transition: { show: { time: 0s }, hide: { time: 0s } }
+#                text:
+#                    # offset: [0px, -1px]
+#                    text_source: |
+#                        function() {
+#                            if( feature.ref ) {
+#                                return feature.ref;
+#                            } else {
+#                                return feature.name;
+#                            }
+#                        }
+#                    anchor: center
+#                    font:
+#                        family: Montserrat
+#                        fill: global.sdk_shield_text_color
+#                        style: bold
+#                        size: [[7,7px],[12,8px],[16,11px]]
 
         width_1char:
             filter: |
@@ -673,25 +674,25 @@ layers:
             draw:
                 sdk-shield-overlay:
                     visible: false
-    mz_default_line:
-        data: { source: mz_default_line }
-        draw:
-            sdk-line-overlay:
-                interactive: global.sdk_interactive
-                color: black
-                order: 503
-                width: 3px
-    mz_default_polygon:
-        data: { source: mz_default_polygon }
-        draw:
-            sdk-polygon-overlay:
-                interactive: global.sdk_interactive
-                color: [0.,0.,0.,0.4]  #'#06b1e2'
-                order: 501
-            sdk-line-overlay:
-                color: black
-                order: 502
-                width: 0px
+#    mz_default_line:
+#        data: { source: mz_default_line }
+#        draw:
+#            sdk-line-overlay:
+#                interactive: global.sdk_interactive
+#                color: black
+#                order: 503
+#                width: 3px
+#    mz_default_polygon:
+#        data: { source: mz_default_polygon }
+#        draw:
+#            sdk-polygon-overlay:
+#                interactive: global.sdk_interactive
+#                color: [0.,0.,0.,0.4]  #'#06b1e2'
+#                order: 501
+#            sdk-line-overlay:
+#                color: black
+#                order: 502
+#                width: 0px
 
 
     # Basemap styling
@@ -1135,10 +1136,10 @@ layers:
                             - [12, 1]
                             - [13, 1.50]
                             - [14, 2.0]
-                        cull_from_tile: true
+                        #cull_from_tile: true
     #                    visible: false
                         text:
-                            offset: [0px, -0.5px]
+                            offset: [0px, -1px]
                             repeat_distance: 200px
                             anchor: center
                             text_source: function() { if( feature.ref.length < 6 ) { return feature.ref; } else { return ''; } }
@@ -1954,10 +1955,10 @@ layers:
                         - [12, 1]
                         - [13, 1.50]
                         - [14, 2.0]
-                    cull_from_tile: true
+                    #cull_from_tile: true
                     visible: false
                     text:
-                        offset: [0px, -0.5px]
+                        offset: [0px, -1px]
                         repeat_distance: 200px
                         anchor: center
                         text_source: |
@@ -2144,7 +2145,7 @@ layers:
                             priority: 46
                             visible: global.sdk_road_shields
                             text:
-                                offset: [0px, 0.5px]
+                                offset: [0px, 1px]
                                 font:
                                     fill: global.text_fill_shield
                                     size: [[7, 8px], [13, 9px], [15, 11px]]
@@ -2185,10 +2186,10 @@ layers:
                             sprite: |
                                 function() { return ('US:US-' + feature.shield_text.length + 'char'); }
                             priority: 47
-                            cull_from_tile: true
+                            #cull_from_tile: true
                             visible: global.sdk_road_shields
                             text:
-                                offset: [0px, -0.7px]
+                                offset: [0px, -1px]
                                 font:
                                     fill: global.text_fill_shield
                                     size: [[7, 8px], [13, 9px], [15, 11px]]
@@ -2860,7 +2861,7 @@ layers:
             draw:
                 text-blend-order:
                     text_source: global.ux_language_text_source
-                    move_into_tile: true
+                    #move_into_tile: true
                     priority: 51
                     order: 7
                     font:
@@ -3544,7 +3545,7 @@ layers:
                     filter: { country_capital: true, $zoom: { min: 5 } }
                     draw:
                         mapzen_icon_library:
-                            size: [[10,5px],[11,0px]]
+                            size: [[10, 5px],[11, 0px]]
                             sprite: capital-m
                             priority: 16
                         text-blend-order:
@@ -3554,7 +3555,7 @@ layers:
                     population: { min: 20000, max: 50000 }
                 draw:
                     mapzen_icon_library:
-                        size: [[8,5px],[9,5px],[10,5px],[11,0px]]
+                        size: [[8,5px],[9,5px],[10, 5px],[11,0px]]
                         sprite: townspot-s-rev
                         priority: 19
                         text:
@@ -3568,7 +3569,7 @@ layers:
                     filter: { country_capital: true, $zoom: { min: 5 } }
                     draw:
                         mapzen_icon_library:
-                            size: [[10,5px],[11,0px]]
+                            size: [[10,  5px],[11,0px]]
                             sprite: capital-s
                             priority: 18
                         text-blend-order:
@@ -3616,7 +3617,7 @@ layers:
                     filter: { country_capital: true, $zoom: { min: 5 } }
                     draw:
                         mapzen_icon_library:
-                            size: [[10,5px],[11,0px]]
+                            size: [[10, 5px],[11,0px]]
                             sprite: capital-s
                             priority: 22
                         text-blend-order:
@@ -4392,7 +4393,7 @@ layers:
                     priority: 15
                     text:
                         buffer: 4px
-                        move_into_tile: false # preserves text alignment w/icons in JS
+                        #move_into_tile: false # preserves text alignment w/icons in JS
                         #anchor: bottom
                         #offset: [[13, [0, 6px]], [16, [0, 8px]], [19, [0, 10px]]] # offset tracks alongside icon size (half icon height)
                         interactive: global.sdk_interactive
@@ -4619,7 +4620,7 @@ layers:
                 text-blend-order:
                     text_source: global.ux_language_text_source
                     #interactive: true
-                    move_into_tile: true
+                    #move_into_tile: true
                     priority: 100
                     visible: global.text_visible_landuse_generic
                     font:
