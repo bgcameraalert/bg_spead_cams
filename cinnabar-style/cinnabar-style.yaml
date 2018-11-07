@@ -1365,9 +1365,9 @@ layers:
                     color: [[8, global.major_road4], [13, major_road2], [17, global.major_road1]]
                     width: [[13, 0px], [14, 2px], [16, 2.5px], [19, 8m]]
                     outline:
-                        visible: false
+                        visible: true
                         color: [[0, global.earth1_r], [13, global.major_casing1]]
-                        width: [[12, 0px], [13, .5px], [15, 1px]]
+                        width: [[12, 0px], [13, 0.5px], [15, 1px]]
             trunk_primary:
                 filter: { kind_detail: [trunk, primary] }
                 draw:
@@ -1375,7 +1375,7 @@ layers:
                         color: [[8, global.major_road5], [9, global.major_road2], [14, global.major_road2], [15, global.major_road1b], [17, global.major_road1]]
                         width: [[8, 0.6px], [9, 0.75px], [10, 1.5px], [13, 2.5px], [14, 4.5px], [15, 5.5px], [16, 7.0px], [19, 14m]]
                         outline:
-                            width: [[8, 0px], [9, 0.5px], [10, 1px], [12, 1.25px], [14, 1.5px], [16, 2.5px], [18, 4.5px]]
+                            width: [[8, 0px], [9, 0.5px], [10, 1px], [12, 1.25px], [14, 1.5px], [16, 1px], [18, 1.5px]]
                 early:
                     filter: { $zoom: { max: 16 } }
                     draw:
@@ -1397,7 +1397,7 @@ layers:
                             width: [[8, 1.0px], [9, 1.5px], [10, 2.0px], [14, 3.5px], [15, 4.5px], [16, 6.0px], [17, 12m]]
                             outline:
                                 color: global.highway_casing1
-                                width: [[9, 0px], [10, 0.5px], [11, 0.75px], [12, 1px], [16, 2px], [18, 4.5px]]
+                                width: [[9, 0px], [10, 0.5px], [11, 0.75px], [12, 1px], [16, 2px], [18, 2.5px]]
                     early:
                         filter: { $zoom: { max: 16 } }
                         draw:
@@ -1476,7 +1476,7 @@ layers:
                         color: [[13, global.major_road3], [14, global.major_road3], [15, global.major_road1b], [17, global.major_road1]]
                         width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 16m]]
                         outline:
-                            width: [[11, 0px], [12, .75px], [13, 1.0px], [14, 1.75px], [15, 2.0px], [16, 3.0px], [18, 4.0px]]
+                            width: [[11, 0px], [12, .5px], [13, .75px], [14, 1px], [15, 1.5px], [16, 1px], [18, 1.5px]]
                 routes:
                     filter: { ref: true, $zoom: { min: 12 } }
                     draw:
@@ -1513,7 +1513,7 @@ layers:
                             color: [[11, global.green1_r], [12, global.minor_road3]]
                             outline:
                                 color: [[14, global.green1_r], [15, global.major_casing1]]
-                                width: [[12, 0px], [13, 0.5px], [15, 1.0px], [16, 1.5px], [18, 3.0px]]
+                                width: [[12, 0px], [13, 0.5px], [15, 1.0px], [16, 1.5px], [18, 2px]]
                 labels-secondary:
                     filter: { $zoom: { min: 12 } }
                     draw:
@@ -1532,7 +1532,7 @@ layers:
                         color: [[13, global.major_road2], [14, global.major_road2], [15, global.major_road1b], [17, global.major_road1]]
                         width: [[11, 0.5px], [12, .75px], [14, 2.5px], [15, 4.0px], [16, 6.5px], [17, 7.5px], [19, 14m]]
                         outline:
-                            width: [[11, 0px], [13, 0.5px], [14, 1.0px], [15, 1.5px], [16, 2.0px], [18, 3.5px]]
+                            width: [[11, 0px], [13, 0.5px], [14, 1.0px], [15, 1.5px], [16, 2.0px], [18, 2.5px]]
                 early:
                     filter: { $zoom: { max: 15 } }
                     draw:
@@ -1567,7 +1567,7 @@ layers:
                             width: [[11, 0.0px], [12, 0.5px], [14, 1.5px], [16, 2.0px], [19, 7m]]
                             outline:
                                 color: [[12, global.major_casing2],[13, global.major_casing1]]
-                                width: [[12, 0px], [14, .25px], [16, 1.0px], [18, 4.0px]]
+                                width: [[12, 0px], [14, .25px], [16, 1.0px], [18, 1.5px]]
                 in_park:
                     filter: { landuse_kind: [park, nature_reserve, conservation, golf_course, garden, zoo] }
                     draw:
@@ -1575,7 +1575,7 @@ layers:
                             color: [[11, global.green1_r], [12, global.minor_road3]]
                             outline:
                                 color: [[14, global.green1_r], [15, global.major_casing1]]
-                                width: [[12, 0px], [13, 0.5px], [14, 1.0px], [16, 1.5px], [18, 3.0px]]
+                                width: [[12, 0px], [13, 0.5px], [14, 1.0px], [16, 1.5px], [18, 2px]]
                 labels-tertiary:
                     filter: { $zoom: { min: 13 } }
                     draw:
