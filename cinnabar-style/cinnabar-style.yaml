@@ -1374,9 +1374,9 @@ layers:
                     lines:
                         color: global.major_road1
                         #color: [[8, global.major_road2], [9, global.major_road2], [14, global.major_road2], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[8, 0.6px], [9, 0.75px], [10, 1.5px], [13, 2.5px], [14, 4.5px], [15, 5.5px], [16, 7.0px], [19, 14m]]
+                        width: [[8, 0.6px], [9, 0.75px], [10, 1.5px], [13, 2.5px], [14, 4.5px], [15, 5.5px], [16, 7.0px], [19, 13m]]
                         outline:
-                            width: [[8, 0px], [9, 0.5px], [10, 1px], [12, 1.25px], [14, 1.5px], [16, 1.75px], [18, 2px]]
+                            width: [[8, 0px], [9, 0.5px], [10, 1px], [12, 1.25px], [14, 1.5px], [16, 1.75px], [19, 2px]]
                 early:
                     filter: { $zoom: { max: 16 } }
                     draw:
@@ -1476,7 +1476,7 @@ layers:
                     lines:
                         color: global.major_road1
                         #color: [[13, global.major_road3], [14, global.major_road1b], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 16m]]
+                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 14m]]
                         outline:
                             width: [[11, 0px], [12, .5px], [13, .75px], [14, 1px], [15, 1.5px], [16, 1px], [18, 1.5px]]
                 routes:
