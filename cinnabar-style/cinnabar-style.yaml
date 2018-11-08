@@ -377,7 +377,7 @@ styles:
         blend: overlay
     text-blend-order:
         base: text
-        blend_order: 2
+        blend_order: 0
     ux-route-line-overlay:
         base: lines
         blend: overlay
