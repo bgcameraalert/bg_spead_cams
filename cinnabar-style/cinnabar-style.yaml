@@ -2828,8 +2828,8 @@ layers:
         in_university:
             filter: { landuse_kind: [university,school] }
             draw:
-                polygons:
-                    color: global.university_b
+                #polygons:
+                    #color: global.university_b
                 lines:
                     color: global.university_bo
         in_hospital:
