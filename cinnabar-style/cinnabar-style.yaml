@@ -1655,7 +1655,7 @@ layers:
                 filter: { $zoom: { min: 15 } }
                 draw:
                     text-blend-order:
-                        priority: 590
+                        priority: 3
                         visible: global.text_visible_minor_road
                         text_source: name
                         font:
