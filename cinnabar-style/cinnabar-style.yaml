@@ -968,12 +968,14 @@ layers:
                 filter: { kind: subway }
                 draw:
                     lines:
+                        visible: global.step_visible
                         color: global.rail1
                         width: [[14, 0.5px], [16, 1px], [17, 1.5px], [18, 2m]]
             light_rail:
                 filter: { kind: [light_rail,tram], $zoom: { min: 15 } }
                 draw:
                     lines:
+                        visible: global.step_visible
                         order: 415    # We want this to be above roads, below gondolas
                         color: grey
                         width: [[14, 0.5px], [16, 1px], [17, 1.5px], [19, 1m]]
@@ -1754,6 +1756,7 @@ layers:
                 filter: { kind_detail: footway }
                 draw:
                     lines:
+                        visible: global.step_visible
                         color: global.path1
                         width: [[14, 0.5px], [15, 1.5px], [17, 3m]]
 
@@ -1870,6 +1873,7 @@ layers:
                     - kind_detail: steps
             draw:
                 dashed_steps:
+                    visible: global.step_visible
                     order: global.feature_order
                     color: global.path_steps2
                     width: [[15, 0.5px], [18, 3px], [19, 1.5m]]
@@ -2652,6 +2656,7 @@ layers:
             filter: { kind: aerialway }
             draw:
                 lines:
+                    visible: global.step_visible
                     color: global.grey2
                     width: [[14, 0.5px], [15, 1.0px], [16, 2m]]
             gondola_cable_car:
