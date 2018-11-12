@@ -1478,7 +1478,7 @@ layers:
                     lines:
                         color: global.major_road1
                         #color: [[13, global.major_road3], [14, global.major_road1b], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 14m]]
+                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 8m]]
                         outline:
                             width: [[11, 0px], [12, .5px], [13, .75px], [14, 1px], [15, 1.5px], [16, 1px], [18, 1.5px]]
                 routes:
@@ -1511,9 +1511,10 @@ layers:
                                     font:
                                         weight: 600
                 in_park:
-                    filter: { landuse_kind: [park, nature_reserve, conservation, golf_course, garden, zoo] }
+                    filter: { landuse_kind: [park, nature_reserve, conservation, golf_course, garden, zoo], not: { kind_detail: secondary } }
                     draw:
                         lines:
+                            #visible: false
                             color: [[11, global.green1_r], [12, global.minor_road3]]
                             outline:
                                 color: [[14, global.green1_r], [15, global.major_casing1]]
@@ -1616,13 +1617,14 @@ layers:
                         join: round
 
             in_park:
-                filter: { landuse_kind: [park, protected_area, nature_reserve, conservation, golf_course, garden, wood, farmland, farm, zoo] }
+                filter: { landuse_kind: [park, protected_area, nature_reserve, conservation, golf_course, garden, wood, farmland, farm, zoo], $zoom: { min: 17 } }
                 draw:
                     lines:
                         color: global.minor_road3
                         outline:
+                            #visible: false
                             color: [[14, global.green1_r], [17, global.minor_casing2]]
-                            width: [[12, 0px], [13, 0.5px], [14, 1.0px], [16, 1.5px], [18, 3.0px]]
+                            width: [[12, 0px], [13, 0.5px], [14, 1.0px], [16, .75px], [18, 1.25px]]
             in_university:
                 filter: { landuse_kind: university }
                 draw:
