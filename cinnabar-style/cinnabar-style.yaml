@@ -1478,7 +1478,7 @@ layers:
                     lines:
                         color: global.major_road1
                         #color: [[13, global.major_road3], [14, global.major_road1b], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 8m]]
+                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 14m]]
                         outline:
                             width: [[11, 0px], [12, .5px], [13, .75px], [14, 1px], [15, 1.5px], [16, 1px], [18, 1.5px]]
                 routes:
