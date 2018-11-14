@@ -312,10 +312,10 @@ styles:
         blend_order: 1
         draw:
             collide: false
-            #texture: tex-marker-user-location #rrr
-            texture: tex-marker-camera
-            size: [49px, 53px]
-            offset: [0px, 6px] #eehe
+            texture: tex-marker-user-location
+            #texture: tex-marker-camera
+            #size: [49px, 53px]
+            #offset: [0px, 6px] #eehe
 
     marker-camera:
         base: points
@@ -326,6 +326,7 @@ styles:
             collide: false
             texture: tex-marker-camera
             size: [49px, 53px]
+            offset: [0px, 6px]
     marker-camera-highlight:
         base: points
         blend_order: 1
@@ -335,6 +336,7 @@ styles:
             collide: false
             texture: tex-marker-camera-highlight
             size: [49px, 53px]
+            offset: [0px, 6px]
 
     dashed:
         base: lines
