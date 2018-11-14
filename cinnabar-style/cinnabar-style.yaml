@@ -326,7 +326,8 @@ styles:
             collide: false
             texture: tex-marker-camera
             size: [49px, 53px]
-            offset: [0px, 6px]
+            offset: [[5, [0px, 0px]], [20,[0px, 6px]]]
+
     marker-camera-highlight:
         base: points
         blend_order: 1
@@ -336,7 +337,8 @@ styles:
             collide: false
             texture: tex-marker-camera-highlight
             size: [49px, 53px]
-            offset: [0px, 6px]
+            offset: [[5, [0px, 0px]], [20,[0px, 6px]]]
+            #offset: [0px, 6px]
 
     dashed:
         base: lines
