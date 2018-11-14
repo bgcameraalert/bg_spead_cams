@@ -312,7 +312,9 @@ styles:
         blend_order: 1
         draw:
             collide: false
-            texture: tex-marker-user-location
+            #texture: tex-marker-user-location
+            texture: tex-marker-camera
+            size: [49px, 53px]
     marker-camera:
         base: points
         blend_order: 1
