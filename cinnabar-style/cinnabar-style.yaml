@@ -316,7 +316,7 @@ styles:
             texture: tex-marker-camera
             size: [49px, 53px]
 
-            offset: [25px, -26px] #eeh
+            offset: [0px, -26px] #eehe
 
     marker-camera:
         base: points
