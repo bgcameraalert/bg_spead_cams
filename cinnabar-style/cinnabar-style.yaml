@@ -326,7 +326,6 @@ styles:
             collide: false
             texture: tex-marker-camera
             size: [49px, 53px]
-
             offset: [[1, [0px, 0px]], [20,[0px, 11px]]]
 
     marker-camera-highlight:
