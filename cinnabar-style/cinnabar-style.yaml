@@ -330,7 +330,7 @@ styles:
 
             #offset: [[1, [0px, 0.6px]], [20,[0px, 11px]]]
             #offset: [0px, -39px]
-            offset: [0px, -8px]
+            offset: [0px, -11px]
 
     marker-camera-highlight:
         base: points
@@ -343,7 +343,7 @@ styles:
             size: [49px, 53px]
             #offset: [[1, [0px, 0.6px]], [20,[0px, 11px]]]
             #offset: [0px, -39px]
-            offset: [0px, -8px]
+            offset: [0px, -11px]
 
     dashed:
         base: lines
