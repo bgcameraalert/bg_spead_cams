@@ -2786,7 +2786,7 @@ layers:
                     visible: true
             max_zoom:
                 filter:
-                    $zoom: { min: 18 }
+                    $zoom: { min: 19 }
                 draw:
                     polygons:
                         visible: true
@@ -3828,6 +3828,16 @@ layers:
                 points:
                     texture: tex-marker-red-light-camera
                     size: [35px, 32px]
+
+        fuel_stations:
+            filter:
+                kind: fuel
+            draw:
+                points:
+                    style: mapzen_icon_library
+                    sprite: fuel
+                    #size: [[17, 27px], [20, 14px]]
+
 
         # improve legibility at high zooms
         poi_labels-z18:
@@ -5082,12 +5092,12 @@ layers:
                     color: global.retaining_wall
                     width: [[14, 0.5px], [15, 1.0px], [19, 1m]]
 
-        fence:
-            filter: { kind: fence }
-            draw:
-                lines:
-                    color: global.fence
-                    width: [[16, 0px], [17, 1px], [18, 1.5px], [20, 0.5m]]
+        #fence:
+        #    filter: { kind: fence }
+        #    draw:
+        #        lines:
+        #            color: global.fence
+        #            width: [[16, 0px], [17, 1px], [18, 1.5px], [20, 0.5m]]
 
         snow_fence:
             filter: { kind: snow_fence }
