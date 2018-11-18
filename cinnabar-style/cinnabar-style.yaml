@@ -3846,7 +3846,7 @@ layers:
             draw:
                 points:
                     texture: tex-marker-gas-station
-                    size: [35px, 35px]
+                    size: [45px, 45px]
 
 
         # improve legibility at high zooms
