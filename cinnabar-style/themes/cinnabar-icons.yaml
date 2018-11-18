@@ -48,6 +48,8 @@ textures:
         url: ../images/marker/CameraHighlight.png
     tex-marker-red-light-camera:
         url: ../images/marker/rm_red_light_cam@2x.png
+    tex-marker-gas-station:
+        url: ../images/marker/gas.png
 
     mapzen_icon_library:
         url: ../images/refill@2x.png

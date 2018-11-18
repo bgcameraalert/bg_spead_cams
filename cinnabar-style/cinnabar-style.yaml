@@ -345,6 +345,17 @@ styles:
             #offset: [0px, -39px]
             offset: [0px, -25px]
 
+    marker-gas-station:
+        base: points
+        blend_order: 1
+        draw:
+            priority: 1
+            #anchor: top
+            collide: false
+            texture: tex-marker-gas-station
+            size: [49px, 53px]
+            #offset: [0px, -25px]
+
     dashed:
         base: lines
         dash: [1.25, 1.25]
@@ -3834,9 +3845,8 @@ layers:
                 kind: fuel
             draw:
                 points:
-                    style: mapzen_icon_library
-                    sprite: fuel
-                    #size: [[17, 27px], [20, 14px]]
+                    texture: tex-marker-gas-station
+                    size: [35px, 35px]
 
 
         # improve legibility at high zooms
