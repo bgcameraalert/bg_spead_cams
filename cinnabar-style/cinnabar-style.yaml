@@ -3847,6 +3847,18 @@ layers:
                 points:
                     texture: tex-marker-gas-station
                     size: [45px, 45px]
+                    text:
+                        visible: true
+                        text_source: global.ux_language_text_source
+                        buffer: 3px
+                        text_wrap: 18
+                        max_lines: 3
+                        font:
+                            family: global.text_font_family
+                            weight: normal
+                            fill: global.text_fill_pois
+                            size: [[13, 10px], [14, 11px], [17, 12px], [19, 12px], [20, 14px]]
+                            stroke: { color: global.text_stroke, width: [[12, 3px],[16, 4px]] }
 
 
         # improve legibility at high zooms
