@@ -4090,7 +4090,7 @@ layers:
             draw:
                 points:
                     texture: tex-marker-gas-station
-                    size: [45px, 45px]
+                    size: [40px, 40px]
                     text:
                         visible: true
                         text_source: global.ux_language_text_source
