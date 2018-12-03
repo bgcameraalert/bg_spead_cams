@@ -91,7 +91,7 @@ global:
     piste_advanced:             '#b3b3b3'
     piste_expert:               '#a6a6a6'
     runway:                     orange
-    arrows:                     [0.766,0.705,0.706]
+    arrows:                     '#FF8888'
     taxiway:                    '#ffc52a'
     runway:                     orange
     earth1_r:                   [0.400,0.400,0.400] # land color road
