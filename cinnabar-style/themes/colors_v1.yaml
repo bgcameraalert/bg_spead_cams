@@ -29,4 +29,4 @@ global:
     major_road: global.color_primary_2
     earth: global.color_complement_1
     forest: global.color_secondary_2_1
-    building: global.color_secondary_1_1
+    building: global.color_complement_2
