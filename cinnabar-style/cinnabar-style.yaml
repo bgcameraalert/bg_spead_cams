@@ -10,9 +10,12 @@
 # Read more: https://github.com/tangrams/cinnabar-style
 #
 import:
+
     #- themes/color-cinnabar.yaml
     #- themes/label-5.yaml
     - themes/cinnabar-icons.yaml
+    - themes/colors_v1.yaml
+
 
 global:
     #
@@ -56,7 +59,7 @@ global:
     rail2:                      [0.950,0.950,0.950] # less important rail (service, sidings)
 
     #global.major_road1
-    major_road1:                '#FFFFD0'           #80%
+    major_road1:                global.major_road
     major_road1b:               global.major_road1           #10%
     major_road2:                global.major_road1
     major_road3:                global.major_road1
@@ -95,7 +98,7 @@ global:
     taxiway:                    '#ffc52a'
     runway:                     orange
     earth1_r:                   [0.400,0.400,0.400] # land color road
-    green1_r:                   '#bddec5'           # park roads
+    green1_r:                   global.forest       # park roads
     green2_r:                   [0.700,0.700,0.700] # cemetery road
     hospital_r:                 [0.788,0.708,0.708] # hospital roads
     university_r:               '#cec1b2'           # university roads
@@ -115,7 +118,7 @@ global:
     water2:             [0.750,0.750,0.750]     # playa
     water1_o:           '#9dc3de'               # water stroke
     water2_o:           '#9dc3de'               # water stroke 2
-    earth1:             '#E2DFD8' #[0.890,0.886,0.878]     # land color
+    earth1:             global.earth     # land color
     urban1:             '#d8d3ca'               # urban early
     urban_v:            true                    # urban early visibility
     green1:             '#aed0b6'               # park (national park, local parks)
@@ -129,7 +132,7 @@ global:
     farm:               [0.861,0.896,0.870]     # farm faint
     farm_v:             false                   # farm faint
     pitch_o:            [0.580,0.835,0.624]    # pitch outline
-    park_forest:        '#bddec5'               # forest, parks, national park
+    park_forest:        global.forest               # forest, parks, national park
     sports_centre:      '#c7d4c0'               # sports_centre
     zoo:            '#d8ddd0'               # minor zoo related AOIs
     zoo_o:          '#aec7b5'               # minor zoo related AOIs outline
@@ -168,8 +171,8 @@ global:
     airport_bo:         [0.588,0.592,0.596]     # airport buildings outline
     recreation:         [0.851,0.843,0.765]     # recreation ground
     beach:              [0.906,0.929,0.659]     # beach
-    building1:          [0.800,0.800,0.800]     # building
-    building2:          '#E3E3E3'     # building stroke
+    building1:          global.building         # building
+    building2:          '#E3E3E3'               # building stroke
     sdk_building_extrude:  false                # building extrude
     building_extrude_height: |                  # building extrude height logic
         function() { return feature.height || 20; }

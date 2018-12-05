@@ -1,0 +1,32 @@
+#http://paletton.com/#uid=74f1v0ka5dW1NS67moRjL8muZ3e
+
+global:
+    color_primary_0:     '#1815D0'
+    color_primary_1:     '#ADACF2'
+    color_primary_2:     '#5855DA'
+    color_primary_3:     '#0E0B7B'
+    color_primary_4:     '#020126'
+                                 
+    color_secondary_1_0: '#F40030'
+    color_secondary_1_1: '#FCA6B7'
+    color_secondary_1_2: '#F74669'
+    color_secondary_1_3: '#A40020'
+    color_secondary_1_4: '#33000A'
+                                 
+    color_secondary_2_0: '#4CEA00'
+    color_secondary_2_1: '#C0F9A4'
+    color_secondary_2_2: '#7BEF44'
+    color_secondary_2_3: '#319800'
+    color_secondary_2_4: '#0F2F00'
+                                 
+    color_complement_0:  '#FFC000'
+    color_complement_1:  '#FFEAA8'
+    color_complement_2:  '#FFD248'
+    color_complement_3:  '#B08500'
+    color_complement_4:  '#362900'
+
+
+    major_road: global.color_primary_2
+    earth: global.color_complement_1
+    forest: global.color_secondary_2_1
+    building: global.color_secondary_1_1
