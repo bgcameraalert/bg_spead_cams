@@ -29,13 +29,13 @@ global:
     text_fill_shield:       [0.308,0.308,0.308]     # road shield fill color
     text_fill_shield2:      [0.508,0.508,0.508]     # road shield fill color
     text_fill_landuse:      [0.400,0.400,0.400]
-    text_stroke:            '#e4e1de'               # land color
+    text_stroke:            '#FEFBFB'               # land color
     text_stroke_water:      [0.900,0.900,0.900]     # water stroke color
     text_stroke_building:   [0.850,0.850,0.850]     # buildings stroke color
     text_stroke_address:    [0.800,0.800,0.800]     # address stroke color
-    text_stroke_road1:      '#8c2c2'               # road stroke color highway
-    text_stroke_road2:      '#fbf2f2'               # road stroke color major road
-    text_stroke_road3:      '#f8d8d9'               # road stroke color major road route
+    text_stroke_road1:      '#FEFBFB'               # road stroke color highway
+    text_stroke_road2:      '#FEFBFB'               # road stroke color major road
+    text_stroke_road3:      '#FEFBFB'               # road stroke color major road route
     text_stroke_road4:      [1.000,1.000,1.000]     # road stroke color minor road
     text_stroke_transit:    [1.000,1.000,1.000]
     text_fill_region:       [0.400,0.400,0.400]     # region labels
@@ -51,7 +51,7 @@ global:
     highway_tunnel1:            '#D19596'           #85%
     highway_tunnel_casing1:     [0.300,0.300,0.300] #95%
     ferry1:                     '#7caacb'
-    rail1:                      [0.467,0.467,0.467]
+    rail1:                      '#464600'
     rail1_e:                    [0.733,0.733,0.733]
     rail2:                      [0.950,0.950,0.950] # less important rail (service, sidings)
 
@@ -64,7 +64,7 @@ global:
     major_road5:                global.major_road1
     major_casing1:              '#8B8A81'           # same as highway_casing1
     major_casing2:              '#CACFD1'           # zoomed out
-    major_tunnel1:              grey                # light orange (major_route1)
+    major_tunnel1:              '#C0C017'                # light orange (major_route1)
     major_tunnel_casing1:       [0.300,0.300,0.300]
     major_route1:               global.major_road1
     major_route2:               global.major_road1           # zoomed out
@@ -169,7 +169,7 @@ global:
     recreation:         [0.851,0.843,0.765]     # recreation ground
     beach:              [0.906,0.929,0.659]     # beach
     building1:          [0.800,0.800,0.800]     # building
-    building2:          [0.600,0.600,0.600]     # building stroke
+    building2:          '#E3E3E3'     # building stroke
     sdk_building_extrude:  false                # building extrude
     building_extrude_height: |                  # building extrude height logic
         function() { return feature.height || 20; }
@@ -1257,7 +1257,7 @@ layers:
                 draw:
                     lines:
                         color: [[12, global.minor_road1], [17, global.minor_road2]]
-                        width: [[12, 1.0px], [14, 1.5px], [15, 3px], [16, 5m]]
+                        width: [[12, 1.0px], [14, 1.5px], [15, 3px], [1, 5m]]
 
             ferry:
                 filter: { kind: ferry }
@@ -1271,21 +1271,24 @@ layers:
             draw:
                 lines:
                     color: [[7, global.highway1_e], [8, global.highway1]]
-                    width: [[5, 1px], [8, 2px], [14, 4.0px], [16, 6.5px], [17, 20m]]
+                    width: [[5, 1px], [8, 2px], [14, 2.0px], [16, 5px], [17, 7m]]
                     outline:
                         color: global.highway_casing1
-                        width: [[9, 0.5px], [12, 1px], [16, 2px], [18, 6px]]
+                        width: [[9, 0.5px], [12, 1px], [16, 2px], [18, 4px]]
+                        cap: round
 
             link:
                 filter: { is_link: true } # on- and off-ramps, etc
                 draw:
                     lines:
+                        cap: round
+                        join: round
                         color: global.highway_link1
-                        width: [[9, 1px], [14, 2.5px], [16, 4px], [18, 9m]]
-                        cap: butt
+                        width: [[9, 1px], [14, 2.5px], [16, 4px], [18, 7m]]
                         outline:
                             color: global.highway_casing1
                             width: [[13, 0px], [14, 1px], [18, 1.5px]]
+                            cap: butt
                 early_link:
                     filter: { $zoom: { max: 15 } }
                     draw:
@@ -1352,7 +1355,7 @@ layers:
 
                         color: global.major_road1
                         #color: [[8, global.major_road2], [9, global.major_road2], [14, global.major_road2], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[8, 0.6px], [9, 0.75px], [10, 1.5px], [13, 2.5px], [14, 4.5px], [15, 5.5px], [16, 7.0px], [19, 11m]]
+                        width: [[8, 0.6px], [9, 0.75px], [10, 1.5px], [13, 2.5px], [14, 4.5px], [15, 5.5px], [16, 7.0px], [19, 7m]]
                         outline:
                             width: [[8, 0px], [9, 0.5px], [10, 1px], [12, 1.25px], [14, 1.5px], [16, 1.75px], [19, 2px]]
                             cap: butt
@@ -1374,7 +1377,7 @@ layers:
                     draw:
                         lines:
                             color: [[8, global.major_route2], [9, global.major_route2], [10, global.major_route1]]
-                            width: [[8, 1.0px], [9, 1.5px], [10, 2.0px], [14, 3.5px], [15, 4.5px], [16, 6.0px], [17, 12m]]
+                            width: [[8, 1.0px], [9, 1.5px], [10, 2.0px], [14, 3.5px], [15, 4.5px], [16, 6.0px], [17, 7m]]
                             outline:
                                 color: global.highway_casing1
                                 width: [[9, 0px], [10, 0.5px], [11, 0.75px], [12, 1px], [16, 1.25px], [18, 2px]]
@@ -1454,12 +1457,12 @@ layers:
                         #outline:
                             #color: global.major_tunnel_casing1
             secondary:
-                filter: { kind_detail: secondary }
+                filter: { kind_detail: [secondary, secondary_link] }
                 draw:
                     lines:
                         color: global.major_road1
                         #color: [[13, global.major_road3], [14, global.major_road1b], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 10m]]
+                        width: [[11, 1.0px], [12, 1.0px], [13, 2.0px], [14, 3.5px], [15, 4.5px], [16, 7.0px], [19, 6m]]
                         outline:
                             width: [[11, 0px], [12, .5px], [13, .75px], [14, 1px], [15, 1.5px], [16, 1px], [18, 1.5px]]
                             cap: butt
@@ -1520,7 +1523,7 @@ layers:
                         cap: round
                         join: round
                         color: [[13, global.major_road2], [14, global.major_road2], [15, global.major_road1b], [17, global.major_road1]]
-                        width: [[11, 0.5px], [12, .75px], [14, 2.5px], [15, 4.0px], [16, 6.5px], [17, 7.5px], [19, 10m]]
+                        width: [[11, 0.5px], [12, .75px], [14, 2.5px], [15, 4.0px], [16, 6.5px], [17, 8.5px], [19, 6m]]
                         outline:
                             width: [[11, 0px], [13, 0.5px], [14, .75px], [15, 1px], [16, 1.25px], [18, 1.5px]]
                             cap: round
@@ -1563,7 +1566,7 @@ layers:
                     filter: { landuse_kind: [park, nature_reserve, conservation, golf_course, garden, zoo] }
                     draw:
                         lines:
-                            color: [[11, global.green1_r], [12, global.minor_road3]]
+                            #color: [[11, global.green1_r], [12, global.minor_road3]]
                             outline:
                                 color: [[14, global.green1_r], [15, global.major_casing1]]
                                 width: [[12, 0px], [13, 0.5px], [14, 1.0px], [16, 1.5px], [18, 2px]]
@@ -1583,7 +1586,7 @@ layers:
             draw:
                 lines:
                     color: global.minor_road3
-                    width: [[11, 0.5px], [12, 0.75px], [13, 1.0px], [14, 1.2px], [15, 2.5px], [16, 8m]]
+                    width: [[11, 0.5px], [12, 0.75px], [13, 1.0px], [14, 1.2px], [15, 2.5px], [16, 6m]]
                     outline:
                         width: [[14, 0px], [15, 0.5px], [17, 0.75px], [19, 2px]]
                         color: [[16, global.minor_casing1], [17, global.minor_casing2]]
