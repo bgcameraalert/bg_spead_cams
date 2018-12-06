@@ -173,9 +173,9 @@ global:
     beach:              [0.906,0.929,0.659]     # beach
     building1:          global.building         # building
     building2:          '#E3E3E3'               # building stroke
-    sdk_building_extrude:  false                # building extrude
+    sdk_building_extrude:  true                # building extrude
     building_extrude_height: |                  # building extrude height logic
-        function() { return feature.height || 20; }
+        function() { return feature.height || 10; }
     #label visibility
     icon_size:                      [[13, '14px'], [16, '18px'], [18, '19px']]
     text_visible_continent:         true
