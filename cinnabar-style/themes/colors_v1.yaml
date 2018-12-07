@@ -26,7 +26,7 @@ global:
     color_complement_4:  '#726629'
 
 
-    major_road: global.color_primary_2
-    earth: global.color_complement_1
-    forest: global.color_secondary_2_1
-    building: global.color_complement_2
+    major_road: global.color_primary_0
+    earth: global.color_complement_0
+    forest: global.color_secondary_2_0
+    building: global.color_secondary_1_0
