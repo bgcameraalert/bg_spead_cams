@@ -27,6 +27,7 @@ global:
 
 
     major_road: '#FFB3A5'
+    major_casing: '#AA786F'
     earth: '#F2EBD0'
     forest: '#8AAD79'
     building: '#BCBCBC'

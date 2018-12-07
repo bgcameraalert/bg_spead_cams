@@ -65,7 +65,7 @@ global:
     major_road3:                global.major_road1
     major_road4:                global.major_road1
     major_road5:                global.major_road1
-    major_casing1:              '#8B8A81'           # same as highway_casing1
+    major_casing1:              global.major_casing           # same as highway_casing1
     major_casing2:              '#CACFD1'           # zoomed out
     major_tunnel1:              '#C0C017'                # light orange (major_route1)
     major_tunnel_casing1:       [0.300,0.300,0.300]
