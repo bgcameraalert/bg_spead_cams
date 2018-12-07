@@ -1,17 +1,17 @@
 #http://paletton.com/palette.php?uid=73r1v0kFvHkaUVxmVLKGXm7SA6Q
 
 global:
-    color_primary_0:     '#584F77'
-    color_primary_1:     '#9B95AD'
-    color_primary_2:     '#756D8F'
-    color_primary_3:     '#41385F'
-    color_primary_4:     '#2D224F'
+    color_primary_0:     '#C6BAEE'
+    color_primary_1:     '#EBE5FC'
+    color_primary_2:     '#D9D0F6'
+    color_primary_3:     '#B2A3E4'
+    color_primary_4:     '#9E8CD7'
                                  
-    color_secondary_1_0: '#AF550B'
-    color_secondary_1_1: '#E38E48'
-    color_secondary_1_2: '#D46F1C'
-    color_secondary_1_3: '#914200'
-    color_secondary_1_4: '#6B3100'
+    color_secondary_1_0: '#D3CCC6'
+    color_secondary_1_1: '#F9E6D5'
+    color_secondary_1_2: '#C3B7AE'
+    color_secondary_1_3: '#AFA093'
+    color_secondary_1_4: '#A08D7D'
                                  
     color_secondary_2_0: '#008B8B'
     color_secondary_2_1: '#81DFDF'
