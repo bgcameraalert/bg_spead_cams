@@ -1,29 +1,29 @@
 #http://paletton.com/palette.php?uid=73r1v0kFvHkaUVxmVLKGXm7SA6Q
 
 global:
-    color_primary_0:     '#C6BAEE'
-    color_primary_1:     '#EBE5FC'
-    color_primary_2:     '#D9D0F6'
-    color_primary_3:     '#B2A3E4'
-    color_primary_4:     '#9E8CD7'
+    color_primary_0:     '#D8D9DF'
+    color_primary_1:     '#9397B8'
+    color_primary_2:     '#B0B3CA'
+    color_primary_3:     '#A8A9B3'
+    color_primary_4:     '#9395A0'
                                  
-    color_secondary_1_0: '#D3CCC6'
-    color_secondary_1_1: '#F9E6D5'
-    color_secondary_1_2: '#C3B7AE'
-    color_secondary_1_3: '#AFA093'
-    color_secondary_1_4: '#A08D7D'
+    color_secondary_1_0: '#E7A392'
+    color_secondary_1_1: '#FFE0D7'
+    color_secondary_1_2: '#FFCBBE'
+    color_secondary_1_3: '#CE7D68'
+    color_secondary_1_4: '#B2573F'
                                  
-    color_secondary_2_0: '#008B8B'
-    color_secondary_2_1: '#81DFDF'
-    color_secondary_2_2: '#2AB6B6'
-    color_secondary_2_3: '#005656'
-    color_secondary_2_4: '#001111'
+    color_secondary_2_0: '#00B64F'
+    color_secondary_2_1: '#4EC883'
+    color_secondary_2_2: '#2ABA69'
+    color_secondary_2_3: '#008C3D'
+    color_secondary_2_4: '#006E30'
                                  
-    color_complement_0:  '#ADA26B'
-    color_complement_1:  '#FBF4D4'
-    color_complement_2:  '#D0C698'
-    color_complement_3:  '#8A7F4A'
-    color_complement_4:  '#726629'
+    color_complement_0:  '#FFFDF6'
+    color_complement_1:  '#FFEFC4'
+    color_complement_2:  '#FFF4D9'
+    color_complement_3:  '#FFFAEC'
+    color_complement_4:  '#E9E3D3'
 
 
     major_road: global.color_primary_0
