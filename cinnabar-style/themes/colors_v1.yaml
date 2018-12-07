@@ -26,8 +26,8 @@ global:
     color_complement_4:  '#E9E3D3'
 
 
-    major_road: '#FFB3A5'
-    major_casing: '#FF5168'
+    major_road: '#42BBD1'
+    major_casing: '#2A7786'
     earth: '#F2EBD0'
     forest: '#C1E2B1'
     building: '#BCBCBC'
