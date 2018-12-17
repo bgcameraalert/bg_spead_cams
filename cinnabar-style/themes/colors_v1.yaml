@@ -28,6 +28,6 @@ global:
 
     major_road: '#FFBF00'
     major_casing: '#FFFFFF'
-    earth: '#EFD8FF'
+    earth: '#E3F5F7'
     forest: '#82C663'
     building: '#EDEDED'
