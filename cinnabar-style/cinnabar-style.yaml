@@ -14,10 +14,18 @@ import:
     #- themes/color-cinnabar.yaml
     #- themes/label-5.yaml
     - themes/cinnabar-icons.yaml
-    - themes/colors_v1.yaml
+    #- themes/colors_v1.yaml
 
 
 global:
+
+    major_road: '#FFBF00'
+    major_casing: '#FFFFFF'
+    earth: '#E3F5F7'
+    forest: '#B7CCB1'
+    building: '#BAC9CB'
+
+
     #
     #label styling
     text_fill:              [0.200,0.200,0.200]     # DARK GRAY
